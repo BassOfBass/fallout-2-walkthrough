@@ -1,2 +1,8 @@
+# Javascript modules
+node_modules
+
 # VSCode workspace file
 *.code-workspace
+
+# Environment variables
+.env
