@@ -1,6 +1,7 @@
 const path = require("path");
 const { ContextReplacementPlugin } = require("webpack");
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const { supportedLanguages } = require("./configs/derived-vars");
 
@@ -20,7 +21,12 @@ const webpackConfig = {
       filename: 'index.html',
       template: "./src/pages/index.pug",
       chunks: ['index'],
-    }),   
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, "public") }
+      ]
+    })
   ],
   resolve: {
     extensions: [".js"],
