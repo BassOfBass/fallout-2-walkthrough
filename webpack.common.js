@@ -18,18 +18,18 @@ const webpackConfig = {
     ),
     new HTMLWebpackPlugin({
       filename: 'index.html',
-      template: "./src/index.pug",
+      template: "./src/pages/index.pug",
       chunks: ['index'],
     }),   
   ],
   resolve: {
     extensions: [".js"],
     alias: {
-      ["@wp/assets"]: path.resolve(__dirname, "src/assets"),
-      ["@wp/components"]: path.resolve(__dirname, "src/components"),
-      ["@wp/lib"]: path.resolve(__dirname, "src/lib"),
-      ["@wp/pages"]: path.resolve(__dirname, "src/pages"),
-      ["@wp/styles"]: path.resolve(__dirname, "src/styles"),
+      ["@/assets"]: path.resolve(__dirname, "src/assets"),
+      ["@/components"]: path.resolve(__dirname, "src/components"),
+      ["@/lib"]: path.resolve(__dirname, "src/lib"),
+      ["@/pages"]: path.resolve(__dirname, "src/pages"),
+      ["@/styles"]: path.resolve(__dirname, "src/styles"),
     },
   },
 }

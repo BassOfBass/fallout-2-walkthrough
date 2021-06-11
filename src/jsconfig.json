@@ -2,11 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@wp/assets/*": ["./assets/*"],
-      "@wp/components/*": ["./components/*"],
-      "@wp/lib/*": ["./lib/*"],
-      "@wp/pages/*": ["./pages/*"],
-      "@wp/styles/*": ["./styles/*"],
+      "@/assets/*": ["./assets/*"],
+      "@/components/*": ["./components/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/pages/*": ["./pages/*"],
+      "@/styles/*": ["./styles/*"],
     },
     "target": "es2015",
     "module": "esnext",

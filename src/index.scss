@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: #fff8e2;;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #0080ff;
+}
+a:visited {
+  color: #b774cc;
+}
+a:hover {
+  color: #0015ff;
+}
+a:active {
+  color: #0015ff;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+.btn {
+  background-color: #efefef;
+  color: #000000;
+  font-size: 21px;
+  border: 1px solid #2e6da4;
+  border-radius: 4px;
+  line-height: 1.3333333;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #777777;
+}
+
+.to-top-container {
+  position: relative;
+}
+
+.btn-to-top {
+  position: fixed;
+  right: 100px;
+  bottom: 5px;
+  z-index: 0;
+  padding: 0.25em;
+}
+
+.index {
+  line-height: 1.6em;
+}
+
+.dark {
+  background: #1e201c;
+  color: #ffffff;
+}
