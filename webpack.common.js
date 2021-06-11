@@ -22,6 +22,11 @@ const webpackConfig = {
       template: "./src/pages/index.pug",
       chunks: ['index'],
     }),
+    new HTMLWebpackPlugin({
+      filename: 'areas/index.html',
+      template: "./src/pages/areas/areas.pug",
+      chunks: ['index'],
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: path.resolve(__dirname, "public") }
