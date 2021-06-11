@@ -1,0 +1,309 @@
+extends ../layout
+
+block content
+  h1 NPCs
+
+  section
+    <blockquote>"Wow! I feel as if I've passed some arbitrary experience value and gained more power!"<br>
+    --Marcus</blockquote>
+
+    NPCs or non-player characters are people you pick up during your travels to fight and die for you, and to carry stuff. Equip them with the best armour and/or weapons they can use which you're not using yourself, and let them carry a bunch of Stimpaks for healing.<br><br>
+
+    If you tell them to heal themselves, or if they decide that's a good idea anyway, they'll use items or skills in this order of preference: Super Stimpak, Stimpak, Healing Powder, Doctor's Bag, First Aid Kit, then whichever healing skill they're best at, which is First Aid for everyone except Lenny (First Aid heals 5-15 HP in this case, Doctor 10-25 HP). If they use a skill this counts towards your own limit. If they're holding a weapon you may have to leave dialogue before they can do any healing, because they have to do the putting away animation.<br><br>
+
+    NPCs can equip any weapon for which they have animation frames (listed below). This means Sulik can use a Super Sledge but never a Cattle Prod, Marcus is the only one who can use miniguns and large energy weapons, and so on. Also everyone has the basic unarmed animation. That they can equip a weapon does <i>not</i> guarantee they are proficient with it, i.e. you can give Lenny the Alien Blaster since it uses the handgun animation, but he can't hit anything since he can't handle Energy Weapons, and Marcus can toss grenades though he doesn't really have the Throwing skill. Note that an NPC won't equip a weapon for which they carry no ammo, even if they can use it, and won't equip a weapon that doesn't suit their current combat settings.
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    A few weapons use animations that aren't too obvious: the 14mm Pistol and .223 Pistol use the SMG animation, and the Tommy Gun uses the rifle animation instead of SMG.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    The "throw" animation is used for Grenades, Rocks, Flares and such; Spears and Throwing Knives use the animation frames of those weapons when thrown. Note that an NPC can only use grenades if their weapon preference is set to "None", which prevents Sulik and Lenny from using such weapons even though they have the animations.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    A weird thing you can do is to equip an NPC with a lit Flare. Make sure they have no other weapon, light the Flare, give it to them and make them ready it. They will effectively become a light source, and what's more, this effect stays indefinitely even after the Flare has disappeared. You can do this for everyone who can equip Flares, i.e. Vic, Davin, Marcus and Myron. You can probably guess that it looks <i>very</i> odd to have them all running around in a big group at night. You can set Marcus to close combat mode and let him rush forward to illuminate your enemies at night, although this should be marginally useful at best. You can actually do this with your own character, but the effect wears off when you switch maps.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    You should make a habit of entering the custom combat settings for each NPC as you find them, so that they conform to your strategy and preferences as well as whatever weaponry you have provided them with.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    NPCs never get radiated or poisoned. They will suffer normal after-effects from chems, though (like losing ST from Buffout or AP from Jet), and not only can they get addicted, but they can seemingly have multiple concurrent and cumulative withdrawal effects. In the case of most chems you can wait this out, but Jet addiction is permanent and the Jet Antidote doesn't work on NPCs, so you risk reducing them to wrecks with just one or a few AP. Furthermore, levelling up will interact oddly with drug use, since their current stats change without regard for temporary effects. An NPC levelling up with raised stats will have the appropriate penalties applied to his new stats, ending up below his proper values. Conversely, an NPC levelling up while in the state of short- or long-term withdrawal will effectively receive a lasting boost when the withdrawal wears off. In either case, the next level up (if there is one) will return things to normal.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    If an NPC dies, and you then save and load the game or leave the map and return, the body will be gone and any carried equipment gone with it (unless they had already dropped it as a result of being fried or blown up). This happens even before you recruit them. Also beware that if an NPC dies and you save the game while still in combat mode, loading that save invariably seems to freeze the game badly at end of turn.</blockquote>
+
+    NPCs in your party won't turn on you if you accidentally hit them in combat (although this could happen in the unpatched game, leading among other things to the "apathetic Vic" bug). However, should ever a party member happen to hit a neutral or "friendly" critter (unless they have a green outline), or should an ally accidentally hit a party member, you'll soon have a fight on your hands you might not like. Another reason to save often, folks.<br><br>
+
+    If an NPC gets hurt by an explosive charge placed by you, they'll attack you for one round and then drop it. If you attack an NPC that's not currently in your party, they'll fight back. Whether you can recruit them again after running from the fight depends on their script. NPCs fall into roughly four categories: those who will be peaceful if you leave and return (Laddie, Robodog); those who will be peaceful after you let them initiate combat once, leave and return (Sulik, Lenny, K-9); those who carry a grudge but can be recruited if you manage to talk to them before they can attack (Cassidy); and those who will in most cases turn permanently hostile or incommunicable (Vic, Marcus, Myron, Goris, Dogmeat). The Brain Bot is a special case since it won't turn hostile at all if shot at, but will turn permanently hostile if stolen from. Also depending on script and location surrounding critters may turn permanently hostile, too - this happens if you attack Sulik in downtown Klamath or Lenny anywhere in Gecko.<br><br>
+
+    Most NPCs belong to local teams before you recruit them and after being dropped off in their home locations, and will attack you if you fight people there; this goes for Sulik, the Modoc NPCs, Lenny, Marcus, Robodog and Goris. Except for Marcus and the Modoc NPCs they won't turn hostile as long as you don't attack them directly, though depending on the circumstances it may be difficult to recruit them later.<br><br>
+
+    You can barter freely with NPCs, or use the Steal interface for quicker access (all attempts to steal or plant items will be successful). Make sure you don't try to steal from an NPC not currently in your party, though, since if you fail this will generally have the same effect as attacking them.
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Beware that if you access the inventory of some party members while they're unconscious, this will have the same effect as stealing from them while they're not in your party, although they still remain with you. Notably, Vic and Myron will refuse to communicate from that point, reducing their usefulness, and Goris will turn permanently hostile once you dismiss him from your service. In v1.0 this could apparently also trigger from friendly fire (the patch notes state NPCs will not turn hostile "under most circumstances").</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    There is a glitch or oversight you can take advantage of to make NPCs act as mules in an almost <i>Fallout</i>-like fashion. Matt Sampson: "I've found a method to give NPCs infinite carrying capacity, at the expense of a little less than half their Action Points. First you tell your comrades to wait for you. Then you go into barter and trade the stuff to them like you normally do. You will notice that instead of evaluating the goods by their weight, your NPCs evaluate the goods by price. Thus, you can weigh them down with whatever goods you like. I believe I once gave Vic 800 pounds of gear." Note that if you give them really much (more than you can unload in one bartering session) you'll have to get their stuff by using Steal.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Sometimes after trading equipment to NPCs you may find that they exceed their Carry Weight allowance unexpectedly. The reason for this is that on occasion they reload weapons in their inventory that they're not using, which because of the way ammo weight is calculated will cause their total weight carried to go up (also see below for how they can actually increase the amount of ammo in their possession). If you find this excruciatingly annoying, always give them one or a few pounds less to carry than what the combat screen reports they can take.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    There's an infinite ammo bug found by Raymond Schulz: Give two or more guns of the same type to an NPC who can use them, making sure that none is loaded and that there's some ammo available. When you press "use best weapon", all of the guns will be loaded using the same ammo! Unequip the wielded weapon, empty them all and repeat. Only one ammo "item" or fraction thereof will be used, e.g. if you do the trick with Cassidy, a BB Gun and a big heap of BB's, no more than 20 will go into each rifle. Something similar will happen when NPCs reload guns in combat; for instance, after equipping a 10mm SMG, reloading and firing a burst, Sulik carried a bunch of SMGs that were each just one bullet short of a full clip, while the weapon he had fired was somehow fully loaded.</blockquote>
+
+    NPC levelling works like this: every time you level up, then for each NPC currently in your party who hasn't levelled up lately there is a chance that that NPC will gain a level. If they don't, the probability will be higher next time, so it's no big deal. If you want to, you can save before levelling up and do it many times to get a good result, but there's no guarantee that any specific NPC will even have the possibility of levelling up. Note that they don't have to be with you when you earn xp, only at the specific moment when you level up.<br><br>
+
+    Most NPCs can level up four or five times during a game. Each time he (for they are all male, or robots) will gain some Hit Points, Action Points, Carry Weight and combat prowess in a non-random fashion. Most of them also gain Critical Chance, Melee Damage and/or Sequence, though Lenny and Myron are exceptions. Check your NPC's combat screen for details. NPCs that cannot carry armour may also gain - or lose! - innate toughness. AC given in the list below is excluding the base AC (equal to their Agility) so that you can compare with normal armour stats; the numbers within parentheses denote levels.
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star.gif" alt="a red star" align="left">
+    Make sure you read your NPCs' comments as they level up. They range from bland early on to hilarious on the higher levels - Marcus and Myron have some priceless lines.</blockquote>
+
+    Certain NPCs (Vic, Lenny, Myron) will use their special non-combat skill if you try to use that skill on something you're not standing right next to, and as long as their skill level is greater than yours. This way you can get Lenny to heal people using Doctor (though strangely this counts towards your own 3-times-a-day limit), or have Vic disable forcefields. There usually isn't much use for this. You can only have them perform actions using the skilldex, so you can't use Myron to hack computers or get the Cybernetic Brain, for instance.<br><br>
+
+    If an NPC has a higher Outdoorsman value than yours it will be used automatically while travelling. This will probably only make a slight difference if any: the only one of them who has a significant skill level is Sulik, who reaches 80% at his highest level. Keeping a Motion Sensor in your own inventory will automatically apply its bonus to the party member with the highest skill (it does nothing if it's in the inventory of an NPC).<br><br>
+
+    The various NPCs are:<br><br>
+
+    <b>Sulik:</b> Found in Klamath. Your first NPC, and he should be with you all the way. Sulik can "consult the spirits" and sometimes provide you with extremely vague clues depending on location, but nothing I would pore over for too long.
+
+    <ul>
+    <li>Main skill: Melee Weapons.
+    </li><li>Other notable skills: Small Guns, Unarmed, Throwing, Outdoorsman.
+    </li><li>Animations: Knife, sledgehammer, spear, SMG.
+    </li><li>Hit Point progression by level: 85, 93, 103, 113, 123, 134.
+    </li><li>AP progression by level: 9, 10, 10, 11, 11, 12.
+    </li><li>Suggested weapon progression: Take his Sledgehammer away and replace it with a Sharpened Spear or Combat Knife at first (this is because he seems to prefer the slow Sledgehammer attack and so only gets one attack per round, as opposed to two with a spear or three with a knife). Upgrade to 10mm SMG by the Den or Vault City, upgrade to HK P90c or (Mega) Power Fist in NCR/Vault 15, give him a H&amp;K G11E once you have enough Caseless ammo (i.e. once you reach San Francisco). If you want a safer gun-toting Sulik, give him a .223 Pistol. Of course he can also use the Super Sledge if you want him to bash people away so you can shoot them.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Will attack you if you become a Slaver, or "cause trouble in Klamath" as he puts it (but only if he is in Klamath). Will leave you if you become a Childkiller or Berserker or your karma becomes <nobr>-101</nobr> or lower. Won't rejoin you if your town reputation in Klamath is Hated or worse.</blockquote>
+
+    <b>Vic:</b> Found in the Den. He's not as fun as Sulik or Cassidy, but well worth keeping. He's quite useful with a Gauss Rifle later on. After you've had him in your party for a while, you get a special dialogue option to tell him not to call you "Boss". Note that there's no typo in the HP list below; he really does have 78 HP for two levels.
+
+    <ul>
+    <li>Main skill: Repair.
+    </li><li>Other notable skills: Small Guns, Energy Weapons (high levels).
+    </li><li>Animations: Throw, knife, pistol, rifle.
+    </li><li>Hit Point progression by level: 70, 78, 78, 102, 111, 117.
+    </li><li>AP progression by level: 8, 8, 9, 9, 10, 10.
+    </li><li>Suggested weapon progression: 10mm Pistol or Hunting Rifle at first, then Combat Shotgun by Vault City, Sniper Rifle or Pancor Jackhammer when you find them, eventually Gauss Rifle (once you reach SF). At the two highest levels he can also use a Pulse Pistol or Alien Blaster well if you want him to. Since his ST is 5 before his last two levels you may want to avoid giving him a H&amp;K CAWS before then (the Gauss Rifle also has a min ST of 6, but it's so darn accurate anyway).
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Will attack you if you attack his daughter Valerie in Vault City while he's in your party (but not if he's currently out of it, even if you kill her before his very eyes).</blockquote>
+
+    <b>Miria:</b> From Modoc. You really shouldn't touch her. Note that Miria and Davin don't have <i>any</i> skills, they just default to Unarmed since that skill has the highest base value.
+
+    <ul>
+    <li>Skill: Unarmed.
+    </li><li>Animations: Knife, SMG.
+    </li><li>Hit Point progression by level: 35 (does not level up).
+    </li><li>AP progression by level: 7.
+    </li><li>Suggested weapon progression: Sucks with anything. You can give her a 10mm SMG or even a Power Fist, but that's basically a waste of ammo. Her ST 3 won't let her use any SMG without a penalty.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Will attack you if you fight anyone in Modoc. Cannot be dropped off.</blockquote>
+
+    <b>Davin:</b> See Miria.
+
+    <ul>
+    <li>Skill: Unarmed.
+    </li><li>Animations: Throw, knife, club, pistol.
+    </li><li>Hit Point progression by level: 35 (does not level up).
+    </li><li>AP progression by level: 7.
+    </li><li>Suggested weapon progression: Same as for Miria, although having ST 4 and different animations means he sucks with a wider and different assortment of weapons.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Will attack you if you fight anyone in Modoc. Cannot be dropped off.</blockquote>
+
+    <b>Laddie:</b> Jonny's dog in Modoc.
+
+    <ul>
+    <li>Skill: Unarmed.
+    </li><li>Hit Point progression by level: 20 (does not level up).
+    </li><li>AP progression by level: 7.
+    </li><li>Suggested weapon progression: None.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Will join you over the party limit at any time unless Jonny has been rescued, and unless Laddie has gone into woofing mode (see Modoc quest 4). Will attack you, but not actually stop following you, if you fight anyone in Modoc. Will leave you if you find Jonny or have him returned to Modoc.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star.gif" alt="a red star" align="left">
+    Joshua Jansen points out that dog NPCs cannot open doors. I don't think there are any deeper applications for this in <i>Fallout 2</i>, but there you have it.</blockquote>
+
+    <b>Cassidy:</b> Found in Vault City. Quite possibly your best choice. Very good with a rifle, but a good HtH fighter as well.
+
+    <ul>
+    <li>Main skill: Small Guns.
+    </li><li>Other notable skills: Energy Weapons, Unarmed, Melee Weapons, Throwing.
+    </li><li>Animations: Spear, pistol, rifle.
+    </li><li>Hit Point progression by level: 80, 92, 104, 116, 128.
+    </li><li>AP progression by level: 8, 8, 9, 9, 10.
+    </li><li>Suggested weapon progression: Same as for Vic: his Sawed-Off Shotgun or a Hunting Rifle at first, then Combat Shotgun, Sniper Rifle or better shotguns when you find them, eventually the Gauss Rifle (once you reach SF). Like Vic he can also make use of energy pistols. Spiked Knuckles and then Mega Power Fist in an HtH party.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Don't give him Psycho, Buffout or Jet, because of his heart condition (he'll die on you). All other drugs are fine including Super Stimpaks. Contrary to what Internet rumours say, the Heart Pills have nothing to do with Cassidy.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Cassidy will not join you if you are a Slaver or Childkiller or have karma <nobr>-101</nobr> or lower, but he doesn't leave if he's already in your party when you acquire these traits.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Two bugs regarding Cassidy have been reported. One makes his combat settings reset regularly, which is actually pretty annoying. Another is that his skill switches to Melee Weapons if you equip him with Power Armor, only to switch back after he gains a level. The latter is not a bug, as explained by Geoffrey Bateman: "For the first two levels, Cassidy's Small Guns skill is less than 6 points higher than his Unarmed and Melee skills, which means that the ST +3 bonus from Power Armor would boost those skills past Small Guns and make one of them his speciality. That's why it disappears as he gains levels."</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star.gif" alt="a red star" align="left">
+    Cassidy has some of the coolest combat taunts in the game... for he will sometimes recite combat messages from <i>Wasteland</i> ("ground round", "thin red paste", "undertaker's nightmare").</blockquote>
+
+    <b>Lenny:</b> Found in Gecko. Lenny is perhaps useful for a pack rat but not much more. Take him only if you favour large parties.
+
+    <ul>
+    <li>Main skill: Doctor.
+    </li><li>Other notable skills: Small Guns.
+    </li><li>Animations: Knife, pistol, SMG.
+    </li><li>Hit Point progression by level: 129, 154, 181, 206.
+    </li><li>AP progression by level: 7, 7, 7, 7.
+    </li><li>Suggested weapon progression: Some kind of pistol with a ST requirement of 4, like the Desert Eagle. Maybe a 10mm SMG and then a HK P90c if you're not worried about him spraying you. If you keep him long enough to get him in Power Armor you can give him a .223 Pistol or a H&amp;K G11E, assuming you don't have a Gauss Pistol to spare.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Lenny will leave if you acquire the Childkiller or Slaver reputations, have karma <nobr>-101</nobr> or lower, or have CH 1. Will attack you if you are in Gecko and have disabled the plant or turned the ghouls hostile. Won't rejoin you if your town reputation in Gecko is Hated or worse (e.g. if you blew up the plant or killed several ghouls, but killing only one or two is OK).</blockquote>
+
+    <b>Marcus:</b> Found in Broken Hills, Marcus is a mixed blessing. On the one hand he's big, carries a lot, and makes things go boom in the night... On the other hand, he's slow, he can't wear armour and he favours weaponry that kills party members.
+
+    <ul>
+    <li>Main skill: Big Guns.
+    </li><li>Other notable skills: Energy Weapons, Unarmed.
+    </li><li>Animations: Throw, large rifle, minigun, rocket launcher.
+    </li><li>AC/DT/DR: 20/4/30 (1), 10/4/30 (2-4), 20/5/40 (5-6).
+    </li><li>Hit Point progression by level: 130, 145, 165, 175, 190, 205.
+    </li><li>AP progression by level: 9, 10, 11, 11, 12, 13.
+    </li><li>Suggested weapon progression: Minigun at first, perhaps Bozar if you find it and like to scrape other party members off walls, Turbo Plasma Rifle as soon as possible. Pulse Rifle even later on. Mega Power Fist works well if he doesn't get himself killed charging ahead.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Initially won't join you if your karma is below 0. Won't rejoin if your karma is <nobr>-101</nobr> or lower or you're a Slaver or Childkiller. Will attack you if you're an enemy of Broken Hills and Marcus is not in your party (and unlike Sulik and Lenny you don't have to be in Broken Hills for him to attack). Attacking Marcus when he's not in your party will turn Broken Hills hostile no matter where you do it.</blockquote>
+
+    <b>Myron:</b> You should pick up Myron to initiate the Jet quest, then leave him somewhere. His primary use is to make chems. Let him do this for all of the ingredients you happen to be carrying (he checks both his own and your inventory) before you dump him somewhere accessible (e.g. outside some shop you'll be visiting regularly anyway), revisit when you've picked up new ones. The only reason to actually bring Myron along is to hear other characters pick on him, and see his level up comments.
+
+    <ul>
+    <li>Main skill: Science.
+    </li><li>Other notable skills: Energy Weapons.
+    </li><li>Animations: Throw, knife, pistol.
+    </li><li>Hit Point progression by level: 70, 77, 92, 107, 122.
+    </li><li>AP progression by level: 7, 7, 7, 7, 8.
+    </li><li>Suggested weapon progression: You can let him use the Needler Pistol until you run out of ammo for it. Get him a Plasma Pistol or if possible a Pulse Pistol. Expect him to miss a lot. If you can be bothered to chase after the Alien Blaster, you should do so.</li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Give Myron a Scorpion Tail and he'll make some Antidote. Give him a Broc Flower, a Xander Root and an Empty Hypodermic and he'll make a Stimpak. If you have IN 8 and Science 76% and ask him to make Stimpaks, you can enable the option to make Super Stimpaks; for this he needs a Fruit, a Nuka-Cola and a Stimpak. In practice the number of Stimpaks you can make will be limited by the number of Empty Hypodermics in the game, since you can get unlimited roots and flowers. Theoretically you could make any number of Super Stimpaks, though, since the ingredients for those replenish in shops, random encounters and working Nuka-Cola machines.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Whenever you try to ditch Myron, you can get him to promise to show you the location of a Mordino stash in Golgotha (which appears on your world map if it wasn't there before) in exchange for not doing so. He doesn't actually actively show you to it, but the stash exists; see the Golgotha section for the details. Once you dig it up, he'll promise to carry more stuff instead (apparently this was supposed to raise his Carry Weight by 10, but it doesn't work).</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    You can't use Jet on him, but if you put it in his inventory, he'll use it on himself in combat. Hmm...</blockquote>
+
+    <b>Brain Bot:</b> A.k.a. Skynet, which refers to the best incarnation of this NPC and the only one that can earn levels. This robot is found in the Sierra Army Depot and must be assembled before it can get on the road. Whether it's useful or not depends on which brain you put into the bot: the cybernetic or human brain will produce a sniperbot, while any lesser brain produces a stupid donkeybot. Since it's possible you won't be able to get Skynet until late in the game, you might already have Gauss Rifles on Vic and Cassidy, and if so you won't need another sniper. It's always painfully slow. You can use Repair to heal the Brain Bot for a few points (three times a day), but not use tools.
+
+    <ul>
+    <li>Skill: Unarmed (2 worst brains), Small Guns (2 best brains).
+    </li><li>Other notable skills: Unarmed (best brain, high levels).
+    </li><li>Animations: SMG, rifle.
+    </li><li>AC/DT/DR: 20/8/40 (1), 20/5/40 (2-6, 3 worst brains).
+    </li><li>Hit Point progression by level (best brain only): 115, 143, 155, 179, 197, 210
+    </li><li>AP progression by level (best brain only): 10, 10, 10, 10, 10, 10.
+    </li><li>Suggested weapon progression (2 best brains only): .223 Pistol, Pancor Jackhammer or HK P90c then Gauss Rifle, or H&amp;K G11E if you want it spraying expensive ammo. It can eventually use a Power Fist to some effect, though not as well as guns.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    The Brain Bot is the only NPC that can't be healed using First Aid, Doctor or chems. However, Skynet can repair itself to full HP using its internal repair systems if you tell it to. What if they shoot up its internal repair systems? Well, that's what backup internal repair systems are for.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    To begin with, the Brain Bot has no protection against EMP damage. Levelling up once is enough for Skynet to gain full protection.</blockquote>
+
+    <b>Robodog:</b> A.k.a. Cyberdog. Found in New California Republic. Don't pick him up. Although Robodog is primarily organic and can be healed using First Aid and Doctor, you can also use a Tool or a Super Tool Kit on him about once per hour, which will heal 10-40 HP if you pass a Repair check. You will also be able to heal him more efficiently if you have good Speech - don't ask. Robodog is another of those "same HP for two levels" critters.
+
+    <ul>
+    <li>Skill: Unarmed (of course - he doesn't have arms. Ha ha ha! Sorry).
+    </li><li>AC/DT/DR: 10/4/30.
+    </li><li>Hit Point progression by level: 97, 107, 107, 127, 137.
+    </li><li>AP progression by level: 9, 10, 11, 11, 12.
+    </li><li>Suggested weapon progression: None.
+    </li></ul>
+
+    <b>Goris:</b> Found in Vault 13. If he's with you at the time of the Vault 13 massacre, he'll leave to return there. Once you go there you can pick him up again. But would you want to? He can't use armour, and the animation where he removes and wears his robe is annoying as hell.
+
+    <ul>
+    <li>Skill: Unarmed
+    </li><li>AC/DT/DR: 20/5/40 (1-4), 25/6/40 (5-6).
+    </li><li>Hit Point progression by level: 125, 134, 145, 155, 166, 175.
+    </li><li>AP progression by level: 11, 11, 12, 12, 13, 13.
+    </li><li>Suggested weapon progression: His Claw.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Initially won't join you if your karma is below 0, you have a negative town reputation in Vault 13, or you are a Berserker or Childkiller. Will leave and return to Vault 13 if your karma falls below 0 or you become a Berserker or Childkiller. Won't rejoin you if your town reputation in Vault 13 is Hated or worse (i.e. you killed a few people).</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    There's a bug where, if you try to pick Goris up after the Vault 13 massacre, he'll join you but every time immediately leaves your party again (because a variable is never reset). This happens if he's in Vault 13 and you didn't already go through the "pack is in trouble" thing (which would be true if you never had him in your party before). To counteract the bug just save and load the game, or leave Vault 13 so that you are outside the vault door, then return and recruit Goris.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    When Goris leaves your party, either because of his pack being in trouble or because he doesn't like you, he actually tags along invisibly, waiting for you to pass by Vault 13 so he can reappear in his usual position. In this state he does not count towards the party member limit; however, as discovered by Sy he <i>will</i> continue to gain levels as if he were in your party.</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Starseeker adds in defence of Goris: "I actually consider Goris to be a better character than most because of his high percentage of critical hits. He can usually take out a floater in one or two turns for me, and he carries more stuff." In my own experience, however, Goris doesn't compare to Sulik and Cassidy equipped with Mega Power Fists and Power Armor even at his highest level, and his relative lack of combat options tends to leave him extremely vulnerable. Also, unless you take a shortcut to pick Goris up early, you'll have to wander the wastes a lot to get him to that level.</blockquote>
+
+    <b>K-9:</b> Found in Navarro. Another useless robodog (albeit the best dog NPC, for what it's worth). Actually the game calls it "Cybernetic Dog". K-9 counts as an organic creature for healing purposes but has only 50% resistance to EMP damage (something to think about if you ever send your henchdogs into close combat with robots while you supportively lob Pulse Grenades from behind).
+
+    <ul>
+    <li>Skill: Unarmed (ahem).
+    </li><li>AC/DT/DR: 25/10/30 (1), 0/10/30 (2-5).
+    </li><li>Hit Point progression by level: 127, 129, 131, 133, 137.
+    </li><li>AP progression by level: 14, 15, 16, 17, 19.
+    </li><li>Suggested weapon progression: Roboteeth<sup><small>TM</small></sup>.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Will leave if you become a Childkiller or have karma <nobr>-101</nobr> or lower, and once it's left in this manner you can't pick it up again (even if your karma goes up).</blockquote>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    Note that K-9's armour definition seems to be bugged so that it actually loses its innate AC bonus after it levels up.</blockquote>
+
+    <b>Dogmeat:</b> Found in the Cafe of Broken Dreams special encounter. Pick him up if it's early in the game, or for the nostalgia value, or to attack him and kill Mel.
+
+    <ul>
+    <li>Skill: Unarmed.
+    </li><li>AC/DT/DR: 10/4/30 (1-4), 15/4/35 (5-6).
+    </li><li>Hit Point progression by level: 98, 108, 118, 128, 141, 151.
+    </li><li>AP progression by level: 15, 15, 15, 15, 16, 16.
+    </li><li>Suggested weapon progression: None.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    If you ever hurt Dogmeat while he's not in your party, Mel [Gibson] shows up packing a H&amp;K G11E and they both attack you. Early in the game that could be <i>very</i> dangerous. If you kill Dogmeat in a single round Mel won't appear. Additionally, when Dogmeat isn't in your party, he's considered by the game to be on the NCR team. This means if you attack him in NCR, the cops will shoot you!</blockquote>
+
+    <b>Pariah dog:</b> Found in a special encounter and described in that section. Someone somewhere obviously likes the idea of dog NPCs. This one will join over the party limit and follow you indefinitely, but you can't give it instructions, tell it to stay or anything.
+
+    <ul>
+    <li>Skill: Unarmed (will not fight).
+    </li><li>AC/DT/DR: 20/5/40.
+    </li><li>Hit Point progression by level: 750 (does not level up).
+    </li><li>AP progression by level: 7.
+    </li><li>Suggested weapon progression: None.
+    </li></ul>
+
+    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+    There have been stories of the corpse of the pariah dog hanging around forever, taking up an NPC slot and not returning the player's Luck to normal. This is a specific case of the 0-damage critical kill bug.</blockquote>
+
+    You can also gain some more or less temporary allies who will follow and fight alongside you but who do not function as true party members (not counting those who'll only join you for a single battle):<br><br>
+
+    <b>Smoke:</b> Nagor's dog in Arroyo.<br><br>
+
+    <b>Yellow dog:</b> The dog in Klamath.<br><br>
+
+    <b>Smiley:</b> The trapper stuck in the Toxic Caves.<br><br>
+
+    <b>Bess:</b> The brahmin in Modoc. She's included in the NPC count, but since you won't have her around for long it usually doesn't matter.<br><br>
+
+    <b>Xarn:</b> The deathclaw captive in Navarro.<br><br>

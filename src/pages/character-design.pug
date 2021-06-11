@@ -1,0 +1,816 @@
+extends ../layout
+
+block content
+  h1#char-design Character design
+  
+  section
+    blockquote "You'd think there's only ten kinds of people in the world. Way I figure it, there was some big cloning accident in the past." 
+      br
+      | --Mason
+
+    p.
+      The SPECIAL system used for <i>Fallout 2</i> character design is so flexible that a complete run-down on possible types isn't feasible nor desirable. I'll center this discussion on a character type which has worked very well for me and try to argue briefly why it does. If the four extremes of character creation are the ones known as diplomat, thief, sniper and brawler, mine is a kind of small guns generalist who can in time excel at everything. It is somewhat similar to the one popularly known as "diplosniper", although some details such as my liking of Fast Shot may run counter to that definition. In any case you'll gain a lot more xp than in <i>Fallout</i>, which is why there's really no need to choose a specific path.
+
+    ul
+      li 
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | The pre-defined characters are generally considered to suck dead gophers (e.g. Narg has Throwing, Mingan has Skilled and Chitsa has Barter). One of the nicest things about most computer RPGs is creating your own character or characters, anyway; even if I wanted a "Mingan" character, I'd make one instead of taking Mingan.
+
+    p.
+      Gender plays a negligible role in the game. Bartering is only affected if you also have the Sex Appeal trait. The only noteworthy differences are that male characters can donate genetic material in Vault City and date Phyllis, while female characters can sleep with Metzger, Little Jesus and T-Ray for money or favours and can get hired by Miss Kitty to go to the Stables. There are several more people that will only sleep with characters of a specific gender (e.g. Angela Bishop, Slim Picket, Fannie Mae), but not much comes of it. Stupid characters can only box if they're male.
+
+    ul
+      li 
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Age is not checked in any of the scripts. A nice detail is that your character will age as time goes by in the game (well, maybe the opposite would have been strange, but it's nice anyway, isn't it?).
+
+    h4 Stats
+
+    p.
+      When allotting char points there are some things to keep in mind:
+
+    ul
+      li
+        <b>Strength:</b> Extremely useful for... carrying stuff. Believe me, this is a game in which you'll want to carry stuff. You should start out with at least 5 (especially if you're taking Small Frame). However, since ST can be increased by 6 points during the game (perk +1, surgery +1, armour +4), I wouldn't recommend going any higher than that; even if you go for the full 10 it will mostly be noticeable in the beginning stages of the game (and a waste towards the end).
+      li
+        <b>Perception:</b> Good for ranged combat. A starting minimum of 5 is required for the Awareness perk, but there are quest benefits to setting it to 6 even for HtH characters. Can be increased by 2 points during the game (perk +1, surgery +1).
+      li
+        <b>Endurance:</b> Determines Hit Points and not much else. Unless you like close combat a little too much I wouldn't put more than 4 (and anyway, two extra points to EN still only means some 30 extra HP by the end of the game). Can be increased by only 1 point during the game (perk +1).
+      li
+        <b>Charisma:</b> Useful for keeping your dialogue options open, though not nearly so important as Intelligence. Affects bartering both directly and indirectly. Your maximum number of followers is equal to your CH divided by two, rounded down. Even if you don't plan to keep any company you might want to set it to 2 so you can at least pick up NPCs temporarily for xp and such. Can be increased by 3 points during the game (perk +1, surgery +1, shades +1).
+      li
+        <b>Intelligence:</b> Unless you plan to rely on brute force for everything, this is likely your most important statistic since it rules conversation and determines extra skill points per level. 7 is a balanced value since it means you only need one Mentats for the few occasions where you need to go higher, though anything up to and including 9 is probably not too much. Can be increased by 3 points during the game (perk +1, surgery +1, weird brain alignment +1).
+      li
+        <b>Agility:</b> Determines your Action Points, so you don't want less than 6, and starting with anything up to 10 doesn't hurt. Can be increased by only 1 point during the game (perk +1).
+      li
+        <b>Luck:</b> As the effects of Luck are not so obvious, it's easy to perceive it as the trash stat of the system (much like Charisma usually is everywhere else). It does have an impact on your rate of critical hits, especially with the Sniper perk in place, but early in the game you won't suffer much from a low Luck score. It can be improved by 3 points during the game (perk +1, either a weird brain alignment +2 or another weird brain alignment +1).
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Stats can never be effectively raised above 10. Of those stat rises mentioned above, the "weird alignment" which gives IN +1 and LK +1 and the other which gives LK +2 are mutually exclusive. Also evil characters will normally lose out on the "surgery" IN +1 bonus.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | A Strength of 5 is enough to handle virtually all weapons early on and many later ones as well (HK P90c, Gauss Pistol, Pulse Rifle). ST 6 is needed for some mid- or late-game weapons such as the Gauss Rifle and Bozar, and ST 7 for all kinds of miniguns, which means that once you get the Power Armor you can pick and choose anyway. If you use a Bozar with ST 5 you "only" get a <nobr>-20%</nobr> penalty which can be balanced with skill points, whereas the stat point can be put to better use.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | EN, CH and AG all work in the way that an odd score will not give you any significant advantages compared to the even number below, e.g. AG 6 or 7 both give you 8 Action Points. Keep this in mind, but also keep in mind ways of increasing stats later; with an odd starting AG, the Gain Agility perk becomes an extra Action Boy, which it wouldn't otherwise.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | As listed in the patch notes, the correct amount of extra HP per level is EN/2+2 (rounded down).
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | You can eat Mentats and recruit party members while your CH is high; you won't lose them when your CH returns to normal (except in the rare case of CH 1 and Lenny). Note however that this will only let you raise your CH by 2, which corresponds to one extra NPC (unless you use the save/load trick - see the Items section). Although there are other ways to improve your CH, in my opinion the best NPCs are the ones found early in the game anyway.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star.gif" alt="a red star" align="left">
+        | In v1.0, getting the car would effectively raise your maximum number of NPCs by one, so that under optimal conditions you could have six of them. The readme mentions this has been fixed for Goris, but actually all of them had the same problem and the same fix.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | If you set IN lower than 4, your character will (usually) only be able to speak in grunts, unable to carry on any meaningful dialogue. Needless to say this will severely impair your ability to take on and solve quests, but you can use Mentats to help with that. (Note that you can also use Mentats "in reverse" during a normal game - take one or two and wait one hour for your stats to drop below normal - if you want to take advantage of an IN&lt;4 feature. Psycho is even more effective.) For more details, see the Stupid section.
+
+    <h4>Traits</h4>
+
+    p.
+      Recommended traits:
+
+    ul
+      li
+        <b>Small Frame:</b> One more stat point and not "some Action Points" like the manual says. Carrying stuff is nice (mmm... stuff), but not crucial once you learn what to keep and what to stow away.
+      li
+        <b>One Hander:</b> Many of the best weapons in the game are two-handed, but it's good for HtH characters since the bonus applies for Unarmed-class weaponry, none of which is two-handed (your completely unaided punch and kick attacks are unaffected).
+      li
+        <b>Finesse:</b> Decent trade-off. Like the More Criticals perk this is made obsolete by the Sniper (with high LK) or Slayer perks, but Finesse will benefit you from the very start of the game.
+      li
+        <b>Fast Shot:</b> A personal favourite, because I like firing a pistol five or six times during a round. When you get Sniper, it rocks, and sticking to burst weapons makes the drawback irrelevant. Don't take this if you're a hard-core sniper though.
+      li
+        <b>Gifted:</b> The stat bonuses counteract the skill penalties (especially if you put a few extra points to IN), so this is universally regarded as the best trait. I don't use it myself because it almost feels like cheating, or at the very least it spoils the challenge of balancing your stats.
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Geoffrey Bateman opines on Small Frame (which I originally rated as a poor trait): "You lose a little Carry Weight, but you'll get Sulik soon, and then maybe a couple more mules, then a car, and Power Armor... Small Frame makes the game a <i>little</i> tougher for a <i>brief</i> while, and in return you get a character point (which could be used for, say, an extra point of IN and 2 skill points per level)."
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Fast Shot doesn't work with HtH attacks, but still removes your ability to make targeted blows (meaning it's actively bad for mêlée characters). This is a change from <i>Fallout</i>.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | If you raise a stat with Bruiser, Small Frame or Gifted, you can redistribute the extra <nobr>point(s)</nobr> manually, so think of them as extra generic char points, although technically this is not so (which is reflected by the fact that you can't lower the raised stats below certain values, but that should never be a problem).
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Paul Melin points out that if you were going to set IN to 10 anyway, the skill point loss from Gifted cannot be offset. Sure, but how many skill points can you find a use for anyway?
+
+    p.
+      Potentially useful but not overly worthwhile traits:
+
+    ul
+      li
+        <b>Heavy Handed:</b> Helpful early on, but downright awful late in the game when you'll actually do less damage than if you didn't have this trait.
+      li
+        <b>Jinxed:</b> Could be useful in a pure (and weird) HtH game. If you or your party members are using guns yourself you shouldn't want to randomize combat unless you're always worse at it than the critters you'll be fighting (in which case you may want to rethink your playing style entirely).
+      li
+        <b>Good Natured:</b> Effectively a skill point boost, since you gain more useful points (Doctor, Speech) than you lose useful ones (Small Guns or Melee Weapons), but marginal in the long run. Unmissable in a pure diplomat game, if you get around to playing one of those.
+      li
+        <b>Sex Appeal:</b> Admit it, you always wanted this.
+
+    ul
+      li 
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Sex Appeal is mostly for female characters, since you'll be dealing with more men in the game world. Even so it won't be an important factor. If you have a low CH it will have a noticeable effect on bartering (almost all shopkeepers are male). It has no positive effect if your CH is 10, and no negative effect if your CH is 1.
+
+    p.
+      Traits to avoid:
+
+    ul
+      li
+        <b>Fast Metabolism:</b> Both effects are utterly marginal, so it's simply an utterly marginal trait.
+      li
+        <b>Bruiser:</b> Two more stat points, but you need the AP. That's like losing four points of Agility, which is ridiculous.
+      li
+        <b>Kamikaze:</b> Trade away protection for Sequence which matters only during the first combat round? No thanks.
+      li
+        <b>Bloody Mess:</b> Fun to begin with (for instance, start up a game and beat up Klint), but doesn't do anything in game terms, and gets tiresome. You'll see those animations anyway and it will feel more like a reward (!) without this trait.
+      li
+        <b>Skilled:</b> With a decent IN you'll be swimming in skill points. A horrible trait, avoid like the plague (unless you have IN 1 or something, though it beats me why you would).
+      li
+        <b>Chem Reliant:</b> The average time you spend being addicted won't change, so what's the big deal? Chem use is marginal anyway and most players will probably just reload if they get addicted.
+      li
+        <b>Chem Resistant:</b> Jet is the only chem with a short enough duration that the downside matters much, but even so it's little more than a convenience (you don't have to reload as often).
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Jon Lynch makes an interesting argument: "The Skilled trait is not as bad as it seems. Every 12 levels, someone with this trait will fall exactly one perk behind. However, they will also have accumulated 60 more skill points in this time. Since most perks that add skill points tend to give 20-40 of them, you're getting approximately double the points and they can also be placed in any skill, whereas the perks allocate the points for you." Still, this assumes you were going to get a skill point perk, which usually isn't your greatest priority. At level 24 I'd much rather have two more perks than 120 extra skill points.
+
+    h4 Skills
+
+    p.
+      Recommended skills to tag:
+
+    ul
+      li
+        <b>Small Guns:</b> Because you should be using this for your primary combat skill for most of the game.
+      li
+        <b>Lockpick:</b> Because there are many, many locked containers and doors and you'll want to open them with a minimum of fuss.
+      li
+        <b>Speech:</b> Because you want people to like you and be impressed with you and give you quests and generally do what you tell them to.
+
+    p.
+      There simply isn't any other skill which comes close to the usefulness of these three, at least if you're playing the game my way. Tag them and bump them up to around 100% early on (except possibly Small Guns if you want more use out of those Guns and Bullets magazines), it will pay off. A mêlée character will want one of these instead of Small Guns:
+
+    ul
+      li
+        <b>Melee Weapons:</b> Unless you make this your primary combat skill you never really have to use it. If you do, tag it and pump it to 100% as soon as possible.
+      li
+        <b>Unarmed:</b> This is used in a few quests, but you don't have to spend any skill points here since it can be raised for free to about 100% anyway. Unless you're going Unarmed all the way I'd wait till after that to make it my primary combat skill.
+
+    p.
+      With that taken care of you can start raising your secondary skills:
+
+    ul
+      li
+        <b>Big Guns:</b> Fun, but only used late in the game and so not worth a tag.
+      li
+        <b>Energy Weapons:</b> See Big Guns.
+      li
+        <b>Doctor:</b> You'll want this up to 75% eventually, but not worth a tag.
+      li
+        <b>Traps:</b> There aren't that many traps in the game, actually, and they're not likely to kill you. You could raise it to 60-70% for convenience, but feel free to ignore this skill altogether.
+      li
+        <b>Science:</b> Can be raised with books. You'll want at least 81% eventually, but don't use any points until you have to.
+
+    p.
+      Skills you will use but need not spend points on:
+
+    ul
+      li
+        <b>First Aid:</b> Does little that Doctor doesn't do better. Don't use any skill points on this, raise it with books.
+      li
+        <b>Repair:</b> Can be raised with books, so don't use points here.
+      li
+        <b>Outdoorsman:</b> Can be raised with books, although those are rare. Mostly good for avoiding annoying random encounters.
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | If you've been wondering what First Aid <i>does</i> do better than Doctor, it comes with a free +20% bonus to your skill check. And... that's pretty much it, I think.
+
+    p.
+      Rather pointless skills:
+
+    ul
+      li
+        <b>Throwing:</b> Rocks and grenades simply don't play a huge role in the world of <i>Fallout 2</i>.
+      li
+        <b>Sneak:</b> I'm sorry, but I don't see the point of sneaking past people when you can just blow them up instead (or maybe that's the point, you sneak up and plant dynamite? Unfortunately there's not enough dynamite to employ this tactic consistently).
+      li
+        <b>Steal:</b> Don't bother unless either you don't mind if everyone turns hostile on you, or you plan to save and reload a lot (which isn't my favoured playing style). If you really must steal something, you can usually do it with a low skill level (saving first, of course).
+      li
+        <b>Barter:</b> Early in the game there won't be a whole lot to buy. Later in the game you'll be swimming in money. Don't waste a single skill point here. Unless you raise the skill way above 100% your CH will have a greater impact on bartering anyway.
+      li
+        <b>Gambling:</b> See Barter.
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Your amount of unspent skill points is capped at 99 when you level up. You can have more than 99 points stored (e.g. after getting a skill point perk), but only until you level up next time.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | A "cheat": when buying a non-combat skill which is slightly above 100%, raise the difficulty to hard (assuming you usually play on normal). Your skill will drop below 100% so you only have to spend one skill point per skill level. Afterwards return the difficulty setting to normal or whatever. This also works when reading books; see the Items section for a note on this.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Similarly you can set the difficulty to easy to raise your skills temporarily for a specific action (again assuming you're playing on normal or hard).
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Some players actually favour the Sneak skill as in some situations it will let you kill people without anyone noticing, which is useful in assassinations. It can also be useful for HtH characters to get as close to the enemy as possible before they open fire. It doesn't much help with stealing, though, as in almost every shop where the wares are kept in an onscreen container the script simply doesn't take sneaking into account.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | I'll put a couple of Steal notes here, because they don't seem to fit anywhere else. You gain a bonus (or suffer a smaller penalty) stealing from the back or side of someone, but the Sneak skill does nothing. Item size (which is not the same as weight) is a factor unless you have the Pickpocket perk. Regardless of your skill level you can use Steal to see what humanoid critters are carrying, although you won't see items they're holding or items that they "produce" during the course of a quest.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | If you manage to steal and/or plant an item two or more times in succession you gain an increasing amount of xp for each successful attempt: 10, 20, 30 and so on, meaning the total will be 10, 30, 60 and so on. However, the total amount will cap out at 300 minus your Steal level, and if you're caught you get none at all. Low-level thief characters can benefit from this by stealing "one coin at a time" from potential victims (or swapping an item back and forth). Personally I'd try to think of something more meaningful to do.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | In some shops you can use Steal on the shopkeeper or a container to take stuff and/or money; in others you can't because the wares are kept in an offscreen container when you're not talking to the shopkeeper or because some scripting feature prevents it. In the latter case wares will appear on the body of the shopkeeper only if you kill them, and perhaps not even then.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Starseeker adds this on Steal: "I have found out that if you have low Lockpick skills, you can try to steal stuff from locked drawers or tables, but it may not always work for some reason. It won't work on lockers." Experimentation shows that it works on desks and workbenches, but not on lockers or footlockers.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | You can plant items on people using Steal. The only use of this feature I know of, except giving equipment to your NPCs, is to arm an explosive, put it on someone, then whistle innocently and walk away a bit. But don't save your game before it goes off; it's been reported that this can corrupt your save slot completely!
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | A tip from Masklinn: "Some people don't show their weapons (sometimes other items, but mainly weapons) in the thieving interface but accept to barter them. Just enter the barter interface, put the weapon in the trading area, then go back and quit dialogue; quite a lot of people will have put the item where you can see it in the thieving interface and you can now steal it."
+
+    p.
+      As a rule, it's not worth it to raise most skills above 101%. Combat skills can be improved beyond that for an extra edge until you reach the point where you get the maximum 95% chance to hit against all opponents and from any reasonable range (which takes a bit longer if you practice the art of aimed shots or blows). Unarmed is an exception if you make use of the HtH Evade perk, though at high levels you'll have to spend quite a lot of skill points for each point of AC. Science has a few uses above 101%; most are strictly marginal, but go for it if you don't have anything else to do with the points. Most often you can just try again if you fail a skill check, even in dialogue. Sneak, Steal and Outdoorsman might seem like exceptions since failure has more of an immediate effect in these cases, but your rate of success hardly rises linearly with skill level anyway; quite likely the chance of success for Steal and Sneak is capped at 95% even before modifiers are applied, just like Outdoorsman.
+
+    h4 Perks
+
+    p.
+      The three top perks, hands down:
+
+    ul
+      li
+        <b>Awareness:</b> Extremely useful. This should be your first perk (which means you should always start with a minimum PE of 5).
+      li
+        <b>Bonus Rate of Fire:</b> In conjunction with Fast Shot this is so good.
+      li
+        <b>Sniper:</b> <i>The</i> sniper perk which will allow you to take on opponents like the Navarro and Enclave troops confidently.
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | In case you need to raise a stat with a perk in order to qualify for another perk, make sure you get this in time. Ideally you should have a good idea when you start playing which perks to take at which level. If you don't have the stats to meet the requirements of a perk you can in some cases use drugs to raise them temporarily and get the perk, but this does not work with perks that have a Luck requirement, for instance. Check out the chems in the Items section for details. Also remember you must spend each perk before earning a new one.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Some have asked me about Sniper and how it interacts with effects that modify your Critical Chance; specifically, the observation has been made that "Sniper and non-aimed" can produce less crits than "aimed and non-Sniper". Basically this is correct for values of Luck below 6. How I think Sniper works, and which is borne out by shooting the pariah dog a great number of times, is that it doesn't replace your usual crit chance but instead adds an independent possibility of a critical hit. If you have Luck 4 you'd normally get crits 4% of the time, with Sniper you'd increase that to 42% (40% from the perk plus 4% of the remaining cases). Using targeted shots to the eyes which increase the crit chance by 60%, you'd have a "normal" chance of 64%, going to 78% with Sniper. In the latter case you'd "only" be up 14% as compared to 38%, and expressed as a fraction of the original crit chance the difference in gain is much greater. Sniper would still add something, though, in this case roughly equivalent to three levels of More Criticals. Similarly, making aimed shots will improve your effective crit chance even if you have Sniper, though the benefit is smaller at high values of LK (12% at LK 8 and 6% at LK 9 for eye shots) and you might then be better served by the extra shot or two afforded by Fast Shot. By contrast, the benefit of More Criticals fades to insignificance even at moderate LK if you have Sniper. With Sniper and LK 10 you get crits all the time, but you can still get more damaging and/or debilitating ones by making aimed shots.
+
+    p.
+      Recommended perks (number of ranks in parentheses):
+
+    ul
+      li
+        <b>Action Boy (2):</b> Whether you need this, and if so how many levels, depends on your current Action Points and what weapons you plan to use. Try to get an even multiple of your weapon's AP cost (or a multiple plus reloading cost if ranged).
+      li
+        <b>Better Criticals:</b> Yummy.
+      li
+        <b>Bonus HtH Attacks:</b> Great for brawlers. (HtH just isn't as efficient as ranged combat.)
+      li
+        <b>Bonus Move (2):</b> A good early choice for HtH characters, and arguably pretty useful for anyone.
+      li
+        <b>Gain Agility:</b> Good if your new AG is an even number, which means an extra Action Point. Otherwise don't bother, it will only net you a few skill points.
+      li
+        <b>Living Anatomy:</b> Very good, 5 more damage per attack <i>and</i> Doctor points although you may not need them at this stage.
+      li
+        <b>Quick Pockets:</b> Actually this is a break early in the game when you find yourself needing Stimpaks or Healing Powder at times, and an overall convenience later on.
+      li
+        <b>Slayer:</b> The ultimate HtH perk (and unlike Sniper you don't need to make a LK roll).
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Michal Burger puts in: "The Bonus Move perk is for an HtH character far superior to Action Boy/Girl, which you suggested, because your enemies tend to slide 2-8 hexes after you hit them so you almost always use up all of your 'move only' Action Points, even if you have two levels of this perk. Another advantage is that you can get Bonus Move at 6th level, compared to 12th for Action Boy. I can never find any good perks at the early levels, so I almost always go for Toughness and Bonus Move. And some extra move AP can be still useful even in ranged combat - for hiding behind obstacles." This argument was made for <i>Fallout</i> where the Super Sledge is the best mêlée weapon, but it has merit even without the knockback angle. Volcano adds: "I find Bonus Move has its uses in ranged combat, when using heavy burst weapons like miniguns or the Bozar. It allows you to get a clear field of fire so that you can target the enemy without blowing apart your NPCs. And it allows you to line up critters to ensure hitting more than one with each burst. Wiping out six floaters with three bursts from a Vindicator is a lot of fun."
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Bonus Move is bugged so that if you save and load the game in combat, your extra movement AP will be available for use again, allowing you to move any distance in a single round.
+
+    p.
+      Possibly useful but not crucial perks:
+
+    ul
+      li
+        <b>Dodger:</b> Protection is good.
+      li
+        <b>Explorer, Ranger, Scout:</b> These all improve your chances of finding special encounters, which can be helpful if you have low LK and play on hard difficulty, but mostly for the fun value, so don't take them until the late game.
+      li
+        <b>Gain Charisma:</b> This is useful if your new CH is an even number, which means you can recruit another party member... if you <i>want</i> another party member.
+      li
+        <b>Gain Intelligence:</b> Unless you start out with IN 9 this is good, but not a top priority if you have IN 7-8 already, which you should.
+      li
+        <b>Gain Luck:</b> Good LK will help with special encounters (maybe) and criticals, so take this in the late game if you can't think of anything else. Great only if you have the Sniper perk.
+      li
+        <b>Gain Perception:</b> Improves your sniping and helps get the Sniper perk (but you can use chems for that). As you can see all the Gain Foo perks are rather situational.
+      li
+        <b>HtH Evade:</b> Strictly better than Dodger for Unarmed experts. Note that you can use unarmed weaponry such as the Power Fist with this perk, i.e. your weapon slots don't literally have to be empty (that perk description had <i>me</i> fooled).
+      li
+        <b>Lifegiver (2):</b> You can accumulate a lot of Hit Points with this one, but after level 12, do you need them? Probably not.
+      li
+        <b>Magnetic Personality:</b> For those situations where you have a lousy CH and want a large party anyway (without fooling around with chems). If your current CH is an odd number then Gain Charisma is strictly superior to this.
+      li
+        <b>More Criticals (3):</b> Groovy, but the catch here is that if you get Sniper (and have a good LK) or Slayer, this perk will be made largely redundant.
+      li
+        <b>Mutate!:</b> There's one way you can use this perk efficiently: exchanging Finesse for Fast Shot at level 27 after you get Sniper (or taking it as your level 21 perk just before reaching level 24). It then effectively becomes another Bonus Rate of Fire. Other than that, don't waste a perk changing traits in mid-game instead of choosing right to begin with.
+      li
+        <b>Silent Death:</b> Considering the six separate requirements for pulling this off, you'd think it'd do more than double damage!
+      li
+        <b>Toughness (3):</b> Protection is good (but spending char points on Endurance is not, so take Buffout if you want this). Would be more noteworthy if it affected all damage types. Note that you can eventually get to 80% DR through other means, and 90% is the maximum, so if you take more than one level of Toughness you risk not getting your money's worth.
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Valiant Bastard notes: "When I choose the Gain Intelligence perk, the relevant skills go up to reflect that, but I don't gain any additional skill points when I move up a level."
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | It's been argued that HtH Evade and Jinxed makes for an effective combination... but hey, that's not really the most inspiring way to play this game, is it? Note that this perk was changed after the manual was printed; the in-game description is the correct one.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Although it's not clear from the description, Lifegiver gives you +4 Maximum HP when you take it; you could say it works retroactively for the level you just earned.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Frank Shannon is not alone when he says: "I'm a little surprised you rated Lifegiver so low." Well, if you take two levels of Lifegiver as quickly as you can and play to level 30, you will have 140 more HP, and it's true that this makes for a good safety margin, especially in an iron man game. However, by that time you'll have run around in heavy armour and with resistance bonuses for a good while and you seldom have to worry about being slain outright except by massive critical hits that bypass armour. Lifegiver could save you in such a moment - and so could Dodger, abstractly speaking. Meanwhile, offensive perks which add attacks, manoeuvrability or damage will be working for you constantly. I'd consider taking Lifegiver before I considered dumping more char points in Endurance, but I still find it limited in appeal.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | If you have CH 8 or 9 and didn't get the Mirrored Shades and/or Blue Memory Module yet, you may want to skip Magnetic Personality since you can't normally have more than 5 party members anyway. This perk is available from level 6, not level 3 as the manual states.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | If you have only one trait when you get the Mutate! perk, you must exchange that for the new one, i.e. you can't just fill the other slot and keep the old trait.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Krum Stanoev adds: "There's another fairly obvious way to modify your primary stats in-game with the Mutate! perk. You can start with an Agility of 6 and still get Sniper: you pick Finesse, then you pick Gain Agility to make it 7, then Mutate! to swap Finesse for Small Frame and get AG 8 for Sniper just before you make it to level 24." (Or you could take a dose of Psycho.)
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | One could make an argument such as this: "If you use Mutate! to change any mediocre trait to Gifted, you're basically getting seven Gain Foo perks at once. That's got to be the best perk ever." The problem with this is that it assumes you didn't get Gifted from the start even though you could have. The beauty of swapping Finesse and Fast Shot is that the benefit of Finesse and the drawback of Fast Shot disappear at the same time, namely when you get Sniper.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | It's possible to score more than one double-damage hit with Silent Death in the first round of combat, assuming you can position yourself behind two or more enemies without leaving Sneak mode (which is difficult if you have to pass directly in front of them).
+
+    p.
+      Perks I rather doubt the usefulness of:
+
+    ul
+      li
+        <b>Bonus HtH Damage (3):</b> Should have been a lot more damage. Now you'll have to get all three levels to notice any difference. Note that this perk adds to the <i>maximum</i> damage - that's only one point on average for each perk slot!
+      li
+        <b>Bonus Ranged Damage (2):</b> Not enough of a bonus unless you're using a Minigun, Bozar or the like (although if you expect to score a lot of damage multiplication criticals it gets a little better).
+      li
+        <b>Gain Strength:</b> You shouldn't need this to get to ST 10.
+      li
+        <b>Pack Rat, Strong Back (3):</b> Carrying more stuff just can't be wrong ("Pack rat you is!"), but spending perks to do it is.
+      li
+        <b>Pickpocket:</b> Neat for thief characters, I suppose, but effectively a convenience perk unless you really never save before stealing.
+      li
+        <b>Silent Running:</b> If you must play a sneaking character I guess this takes a lot of frustration out of playing, but doesn't it spoil the atmosphere? Pure convenience.
+      li
+        <b>Smooth Talker (3):</b> Almost the equivalent of the Gain Intelligence perk, but not quite... Better to start off with a decent IN instead, no?
+      li
+        <b>Tag!:</b> Since it's a skill point perk, personally I wouldn't touch it, but used correctly it can give you rather a lot of points so I'm rating it higher than the rest.
+      li
+        <b>Thief:</b> Pretty much the same for this. Since it gives you 40 skill points and you can get it at level 3 this is one of the best skill perks. Not that these thief skills are crucial or anything.
+      li
+        <b>Weapon Handling:</b> Could be used to facilitate switching to Avenger Minigun or the like early in the game, but otherwise not needed unless your ST is way too low to begin with. Just spend some skill points to compensate.
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | You can play a little trick with the Tag! perk. When you use it to tag a skill, it will raise the skill level by the same amount you already raised the skill, including bonuses gained during play (but <i>not</i> the initial 20% bonus). The trick is that before leaving the character screen you can lower the skill to its previous level (gaining even more skill points if the skill went above 101%), and then spend the points elsewhere. Effectively this perk can give you an amount of generic skill points at least equal to the highest amount you've gained in a non-tagged skill, and potentially much more, which makes it far superior to every other skill point perk. Although a favourite of some players, personally I think it's no big deal, since I don't care much for skill points late in the game anyway. As pointed out by Volcano, the game keeps track of the skill level if it goes above 300%, so if you tag a skill at 299% you'll get several hundred points out of it - but if you tag a skill at 300%, you can't lower it at all!
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | When you pick a skill point perk (other than Tag!) you can redistribute points only to the extent that you have previously raised that skill by investing skill points, reading books or getting one-shot bonuses. Survivalist is probably the most likely candidate of the bunch, but it's still much inferior to Tag! for the purpose. Also note that skill point perks raise skills by a fixed amount, no matter if they are tagged (in which case you lose) or higher than 101% (in which case you profit). This redistribution trick also works on a smaller scale when you buy a perk that raises a stat.
+
+    p.
+      Useless perks which should only be chosen if you have no other options (or really want to):
+
+    ul
+      li
+        <b>Adrenaline Rush:</b> Gain an infinitesimal bonus, but first you'll have to be dying? Let me think.
+      li
+        <b>Cautious Nature:</b> Pointless for anyone but the most cowardly diplomats who can't think of anything else.
+      li
+        <b>Comprehension:</b> What's the use if it doesn't raise the maximum skill level which can be reached using books? See Educated etc.
+      li
+        <b>Cult of Personality, Karma Beacon:</b> These perks have no effect in the game. That's right, they do nothing. Take Adrenaline Rush or Light Step if you want a better perk than these two.
+      li
+        <b>Demolition Expert:</b> So extremely marginal.
+      li
+        <b>Earlier Sequence (3):</b> Not worth it.
+      li
+        <b>Educated (3), Gambler, Harmless, Master Thief, Medic, Mr. Fixit, Negotiator, Salesman, Speaker, Survivalist:</b> All these perks give you nothing but skill points. You don't need more skill points. You need the cool perks listed in the sections above this one.
+      li
+        <b>Empathy:</b> It seems like a great idea in theory, but this game simply isn't about choosing the dialogue options that keep <i>other</i> people happy.
+      li
+        <b>Faster Healing (3), Healer (2):</b> Healing rate is never an issue.
+      li
+        <b>Fortune Finder, Master Trader:</b> Money is not an issue. Fortune Finder is just awful; Master Trader isn't actively bad, just strictly unnecessary.
+      li
+        <b>Gain Endurance:</b> Endurance is simply not important, and this does nothing if your EN is an even number. Lifegiver is tons better for HP.
+      li
+        <b>Ghost:</b> Like a skill point perk only you don't get the skill points!
+      li
+        <b>Heave Ho!:</b> Strictly for grenade chums, and exceptionally marginal even so.
+      li
+        <b>Here and Now, Swift Learner (3):</b> These two help you gain levels. What's the primary purpose of gaining levels? To get perks. So why use perks to gain more levels? If you want HP and/or skill points there are much better choices anyway.
+      li
+        <b>Kama Sutra Master:</b> Doesn't really do anything that Sex Appeal, Sexpert and/or good physical stats don't. A sex perk is bound to be utterly marginal.
+      li
+        <b>Presence (3):</b> Don't bother. Extremely few critters treat you differently depending on reaction, and this perk isn't likely to be the factor that tips the scales in your favour.
+      li
+        <b>Light Step:</b> Not enough traps to make this remotely worthwhile. Not even if it said "never" instead of "less likely".
+      li
+        <b>Mysterious Stranger:</b> Utterly useless.
+      li
+        <b>Night Vision:</b> Situational, and doesn't do much. Increase your weapon skill instead or pick Sharpshooter.
+      li
+        <b>Pathfinder (2):</b> Time is not an issue in <i>Fallout 2</i>.
+      li
+        <b>Pyromaniac:</b> Too marginal. Should have been a <i>lot</i> more damage to have been any fun. Also note that the (Improved) Flamer is the only weapon that does fire damage (Molotov Cocktails do not, even though they have the "dancing death by fire" animation, and Flame Breaths don't count).
+      li
+        <b>Quick Recovery, Stonewall:</b> Both mind-numbingly marginal.
+      li
+        <b>Rad Resistance (2), Snakeater (2):</b> Poison and radiation aren't common enough, or difficult enough to handle, to necessitate these small bonuses.
+      li
+        <b>Sharpshooter:</b> Effectively just a minimal skill increase for all ranged attacks. Increase your preferred weapon skill instead and use the perk for something special.
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Kanhef explains Heave Ho!: "A character's maximum range for throwing weapons is ST*3. Someone with a Strength of 2 can throw things up to 6 hexes away. Taking Heave Ho! gives them an effective ST of 4, for a range of 12. However, the maximum throwing range is 8 for spears, and 15 for grenades. So raising Strength above 5 doesn't increase range at all. Characters with a Strength of 1 would benefit from this perk; it's completely useless with a Strength over 4." Throwing Knives have a maximum range of 16 hexes, but taking a perk to increase your ST 5 character's range with that particular weapon by 1 hex would seem to fall within the definition of "completely useless".
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Both Heave Ho! and Survivalist have only one rank instead of three like the manual says. Several other perks were changed (for example, all skill point perks), but their proper descriptions are in the game.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Here and Now gives you exactly the amount of xp needed to reach the next level; ideally it should be taken at a high level and after earning just enough xp to reach your current level. Well, ideally it should not be taken, but you know what I mean. You need to exit and re-enter the character screen to get the skill points and the new perk, if any. Volcano adds: "If you take Here and Now as your perk at Level 99, your accumulated xp total becomes 0. There doesn't seem to be any other effect." Taking it at level 97 gets you to level 99 (see note in the Area walkthrough introduction). This perk is available on level 3 instead of level 9 as the manual says; this is actually not a bug, but was omitted from the final patch readme.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star.gif" alt="a red star" align="left">
+        | In v1.0 when you took Here and Now you gained an amount of xp equal to the total amount needed to reach your current level; starting at level 6 you would gain more than one level as a result, with the number of levels gained increasing with your current level. For instance, if you took the perk just after reaching level 19, you would double your total experience to 342,000 and rise to level 26. Of course, you would only be able to pick one perk afterwards. Juan adds: "When I pressed cancel and left the character screen, I saw that the text screen said 'You have gone up a level' 10 times, and my NPCs had levelled up... but they didn't lose their levels! So I tried picking and cancelling Here and Now again, and yes, my party members went gaining levels, over and over, until they reached their max level (and I still had the perk available)." With the patch NPCs will not have a chance of levelling up in this case.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Light Step is one of those mind-bogglingly stupid perks. Not only is the ability to avoid pressure plates decidedly minor, and not only does Light Step require you to pass a difficult AG check for each mine to do so, but they didn't even care to set this up for every floor trap in the game. In fact, the only places where Light Step is used are Redding and outside (but not inside) the SAD.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Contrary to what the manual says, the Master Trader perk doesn't make your own stuff more valuable, but gives you a discount on the value of goods you barter for (the <i>Fallout</i> manual has it right). The effective discount varies somewhat between shops: 20%, 25% and 50% have all been noted (probably because barter modifiers are applied cumulatively and not sequentially).
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | The Pathfinder perk appears to be slightly bugged: the first level will cut 20% of travelling time (not 25%), while the second level doesn't seem to do anything at all. In <i>Fallout</i> the perk worked as it should.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Sharpshooter is bugged and doesn't really do what the manual says; it's supposed to raise PE by 2 for sniping purposes, yet often improves your chance to hit less, and never more, than increasing PE by 1. Michal Burger figured out that this is because the perk thinks range modifiers are calculated based on PE when it's in fact PE*2, and so increases your chance to hit only half as much as it should. At least it gives you a bonus even if your PE is at 10 already.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | Swift Learner decisively wins the struggle for the title of most deceptively lousy perk. It may certainly seem like a good investment when you first look at it, <i>but</i> since the xp requirement for each new level rises linearly, even if you get all three slots of Swift Learner you only ever stay a few levels ahead of someone who doesn't ruin their early game wasting invaluable perks. For starters, you have to wait until level 17 before you're even <i>one</i> whole level ahead of the "slow" learner, and if you eventually get to level 30, which should not be until the game is over anyway, you'll still be only <i>two</i> levels ahead. So, that adds up <i>eventually</i> to a few HP and skill points, for three perks... Simply put, do not choose this perk even if it threatens you with a radiated stick.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star.gif" alt="a red star" align="left">
+        | There are a few implemented perks which you cannot gain, namely Animal Friend, Flower Child, Mental Block and Scrounger. They were in the original <i>Fallout</i>. Rumours that you can get some or all of them in <i>Fallout 2</i> are completely unsubstantiated, and only Flower Child has any effect should you add it using a character editor.
+
+    h4 Suggested characters
+
+    p.
+      First of all, none of that "theme character" nonsense, like tagging Science and Repair and choosing "tech perks" like Educated and Mr. Fixit, or tagging Sneak and Steal and then choosing "ninja perks" like Ghost, Pickpocket and Silent Death, or even tagging Speech and Barter and picking "diplomat perks" such as Presence, Empathy and Cult of Personality. Well, of course you could do that (and probably even finish the game), but in that case it'd be pointless for me to tell you what to do. Also I don't think you could squeeze as much out of the game as you could with a generalist. For one thing, those options will be more or less available to you anyway by the time you need them. For another thing, there are very few advantages (either minmaxing-wise or role-playing-wise) to be gained from being an "expert scientist" or "expert sneaker". Really. Wonderfully flexible as the SPECIAL system is, some characters <i>are</i> bigger than others.
+
+    p.
+      What you really need is good IN (for dialogue and skill points), good Speech, and at least one way to deliver damage efficiently. You then basically have a choice between ranged or close combat because the perk progressions are different, and another choice between going solo or gathering followers. Or you can be stupid, which is the same as, well, pitting the odds against yourself.
+
+    p.
+      The "developed" stats given below assume the following:
+
+    ul
+      li ST +5 (Advanced Power Armor, memory module)
+      li PE +1 (memory module)
+      li IN +1 (memory module)
+      li LK +2 (NCR zeta scan)
+
+    p.
+      Also they include Gain Foo perks if listed in the perk progressions. By default CH remains unchanged since the +2 bonus (Mirrored Shades, memory module) is countered by the enhanced combat implants.<br><br>
+
+    p.
+      <b>Team gunfighter:</b> A bright and sociable character who can bring three friends along. You can take on all quests and pack some punch.
+
+    ul
+      li.
+        Initial stats: ST 5, PE 6, EN 4, CH 6, IN 7, AG 7, LK 6.
+      li.
+        Developed stats: ST 10, PE 7, EN 4, CH 6, IN 8, AG 8, LK 8.
+      li.
+        Traits: Small Frame, Fast Shot.
+      li.
+        Tag skills: Small Guns, Lockpick, Speech.
+      li.
+        Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Gain Agility, level 21 Action Boy, level 24 Sniper.
+      li.
+        Comments: Pick up Sulik, Vic and Cassidy for a posse of gunslingers. Later in the game you can switch to Big Guns (goes well with Fast Shot), perhaps in conjunction with pulse and/or gauss weapons. You need a Jet or Mentats for Sniper. Whether you should pick Living Anatomy or go for more AP is situational.
+
+    p.
+      <b>Gifted gunfighter:</b> A boosted version of the above.
+
+    ul
+      li.
+        Initial stats: ST 5, PE 7, EN 4, CH 6, IN 7, AG 10, LK 8.
+      li.
+        Developed stats: ST 10, PE 8, EN 4, CH 6, IN 8, AG 10, LK 10.
+      li.
+        Traits: Fast Shot, Gifted.
+      li.
+        Tag skills: Small Guns, Lockpick, Speech.
+      li.
+        Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Action Boy, level 21 Action Boy, level 24 Sniper.
+      li.
+        Comments: See Team gunfighter. Basically you're a deadly gunman (or -woman) who can also pick up a few NPCs.
+
+    p.
+      <b>Solo sniper:</b> A character that can do almost everything in the game and mostly relies on ranged (and deadly) sniping to conquer the enemy. A bit harder to play early in the game.
+
+    ul
+      li.
+        Initial stats: ST 5, PE 7, EN 4, CH 1, IN 7, AG 9, LK 8.
+      li.
+        Developed stats: ST 10, PE 8, EN 4, CH 1, IN 8, AG 10, LK 10.
+      li.
+        Traits: Small Frame, Finesse.
+      li.
+        Tag skills: Small Guns, Lockpick, Speech.
+      li.
+        Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Gain Agility, level 21 Action Boy, level 24 Sniper.
+      li.
+        Comments: Build Small Guns to 150% and kill everything that moves with the Scoped Hunting Rifle/Sniper Rifle/Gauss Rifle. Don't get the enhanced combat implants until you've temporarily recruited the NPCs you can get xp and other bonuses from (such as Myron's antidote quest). You can do the Mutate! thing at level 27 to get Fast Shot if you like, but you'll be pretty deadly anyway with 12 AP and a Gauss Pistol.
+
+    p.
+      <b>Team brawler:</b> A character devoted to Unarmed and Melee Weapons.
+
+    ul
+      li.
+        Initial stats: ST 5, PE 6, EN 4, CH 6, IN 7, AG 9, LK 4.
+      li.
+        Developed stats: ST 10, PE 7, EN 4, CH 6, IN 8, AG 10, LK 6.
+      li.
+        Traits: Small Frame, One Hander.
+      li.
+        Tag skills: Melee Weapons, Lockpick, Speech.
+      li.
+        Perk progression: Level 3 Awareness, level 6 Bonus Move, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus HtH Attacks, level 18 Gain Agility, level 21 Action Boy, level 24 Slayer.
+      li.
+        Comments: Pick up Sulik and Cassidy. CH 6 is mostly for quest purposes; theoretically you could recruit Marcus or Goris, but I actually wouldn't. You need a quick trip to NCR around level 9 to meet the LK requirement of Better Criticals. You can move two points of CH to LK if you want, but LK ultimately isn't as important for an HtH character. The reason I choose Melee Weapons over Unarmed from the start is that it's a little better in the beginning, and there are many ways of raising Unarmed for free during the game, so that it's very easy to make the switch when the time comes.
+
+    p.
+      <b>Solo brawler:</b> Same as above but with less CH. Not really an improvement, though, since you lose some quest features and mostly boost Luck in return (theoretically you could boost EN instead, but I just wouldn't bother).
+
+    ul
+      li.
+        Initial stats: ST 5, PE 6, EN 4, CH 1, IN 7, AG 10, LK 8.
+      li.
+        Developed stats: ST 10, PE 7, EN 4, CH 1, IN 8, AG 10, LK 10.
+      li.
+        Traits: Small Frame, One Hander.
+      li.
+        Tag skills: Melee Weapons, Lockpick, Speech.
+      li.
+        Perk progression: Level 3 Awareness, level 6 Bonus Move, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus HtH Attacks, level 18 Action Boy, level 21 Action Boy, level 24 Slayer.
+      li.
+        Comments: See Solo sniper (but exchange the Super Sledge or Mega Power Fist for the Gauss Rifle, and you don't do the Mutate! thing).
+
+    p.
+      <b>Stupid:</b> The workings of the stupid game is detailed in the Stupid section. I wouldn't recommend playing a stupid HtH character, it's rather hard enough as it is.
+
+    ul
+      li.
+        Initial stats: ST 5, PE 9, EN 4, CH 1, IN 3, AG 10, LK 8.
+      li.
+        Developed stats: ST 10, PE 10, EN 4, CH 3, IN 3, AG 10, LK 10.
+      li.
+        Traits: Finesse, Fast Shot.
+      li.
+        Tag skills: Small Guns, Doctor, Lockpick.
+      li.
+        Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Action Boy, level 21 Action Boy, level 24 Sniper.
+      li.
+        Comments: You can substitute anything you like for Fast Shot and/or Doctor. You need 2 Mentats for Bonus Rate of Fire. You don't get the combat implants, and of course you can't get any IN rise if you want to remain true to the stupid theme. You'll probably have to fight a lot of random encounters if you want Sniper before heading off to the Enclave, because of the dearth of quest xp.
+
+    h4 Special perks
+
+    p.
+      A quick list of special perks that can be gained, detailed further in the walkthrough:
+
+    ul
+      li.
+        <b>Alcohol Lowered hit points:</b> Gained in the Parlor Room in Vault City.
+      li.
+        <b>Alcohol Lowered hit points II:</b> Ditto.
+      li.
+        <b>Alcohol Raised hit points:</b> Ditto.
+      li.
+        <b>Alcohol Raised hit points II:</b> Ditto.
+      li.
+        <b>Autodoc Lowered hit points:</b> Gained from Dr Andrew in Vault City.
+      li.
+        <b>Autodoc Raised hit points:</b> Gained from Dr Andrew in Vault City.
+      li.
+        <b>Expert Excrement Expeditor:</b> Gained from shovelling crap in Broken Hills.
+      li.
+        <b>Gecko Skinning:</b> Gained from Smiley in Klamath.
+      li.
+        <b>Dermal Impact Armor:</b> You can get this from doctors in Vault City, Redding or San Francisco once you learn about implants in Vault City.
+      li.
+        <b>Dermal Impact Asslt. Enhance.:</b> See Dermal Impact Armour.
+      li.
+        <b>Phoenix Armor Implants:</b> See Dermal Impact Armour.
+      li.
+        <b>Phoenix Assault Enhancement:</b> See Dermal Impact Armour.
+      li.
+        <b>Vault City Inoculations:</b> Gained from Dr Troy in Vault City.
+      li.
+        <b>Vault City Training:</b> Gained from Dr Troy in Vault City.
+      li.
+        <b>Jinxed:</b> The pariah dog will bestow this doubtful perk upon you.
+
+    h4 Reputations
+
+    p.
+      During the game you will accumulate characteristics which are neither perks nor traits, but presented alongside them. They're often called "karmic traits", or even "perks", but the manual calls them "special reputations". They don't affect your stats (other than Prizefighter, which could just as well have been a special perk), only how people in the game world react to you.
+
+    ul
+      li.
+        <b>Berserker:</b> Kill significantly more good people than bad people. Great pic!
+      li.
+        <b>Champion:</b> Kill significantly more bad people than good people and don't be a Childkiller.
+      li.
+        <b>Childkiller:</b> Kill a child for any reason, even by accident.
+      li.
+        <b>Gigolo:</b> Have sex a lot (or just once, providing you're extremely good at it). (For a woman, this should actually read "Gigole".)
+      li.
+        <b>Grave Digger:</b> Dig up a grave other than Anna's, the fallout shelter in Golgotha, or the buried ghoul in Golgotha.
+      li.
+        <b>Made Man:</b> Join a family in New Reno.
+      li.
+        <b>Married:</b> Marry Miria or Davin in Modoc.
+      li.
+        <b>Porn Star:</b> If you shoot a movie at the Golden Globes.
+      li.
+        <b>Prizefighter:</b> Win the boxing title in New Reno.
+      li.
+        <b>Separated:</b> Have your spouse killed or sold into slavery, or get divorced in New Reno.
+      li.
+        <b>Sexpert:</b> Have sex ten times.
+      li.
+        <b>Slaver:</b> Join Metzger's guild in the Den.
+
+    ul
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | The people of the <i>Fallout</i> world seem to adopt an "Einmal ist Keinmal" philosophy when it comes to childkilling. This means that even though you get the Childkiller label on your character sheet for killing one child, scripts always check to see if you've killed two kids or more (including the bounty hunters on the world map). I won't spell this out every time, though, so in the walkthrough, "Childkiller" should be read as "having killed two children or more".
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | If any of your NPCs kills a child you don't get the Childkiller reputation.
+
+      li
+        <img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
+        | There are a few kids who increase your child kill count twice because of a script redundancy (and thus instantly make you a "real" Childkiller): these are Jonny in Modoc, the Slag kids, and Curtis in Vault City.
+
+    p.
+      Your actual karma level will be described using the karmic titles, from "most good" to "most evil": Savior of the Damned, Guardian of the Wastes, Shield of Hope, Defender, Wanderer, Betrayer, Sword of Despair, Scourge of the Wastes and Demon Spawn. Each 250 karma in either direction from 0 will earn you a new title. I find that being a shameless opportunist will net you high positive karma in the end - which could mean that the designers have strange notions about morality, but more likely just reflects the fact that there are more good things to do in the game than bad ones.
+
+    p.
+      Reputation in specific towns are reflected by the standings: Idolized, Liked, Accepted, Neutral, Antipathy, Hated and Vilified. Like your karma level this is a representation of a numeric value, only this one is hidden. You always start out as Neutral when you come to a place, except Klamath where you're Accepted if your CH is 6 or more, and Vault City where you start out with Antipathy. In Arroyo, of course, you're Idolized. Sadly it's not possible to reach Idolized in all settlements if that's your aim. At the Ghost Farm, for instance, you can't advance beyond Neutral even after saving all their sorry asses.
+
+    p.
+      It should be noted that karma and reputations all have a much smaller general impact on the game than one might think. They make a difference in the case of critters that look directly for certain reputations or threshold values of karma or town reputation, but the basic reaction system that factors in everything at once is hardly used at all and doesn't even work properly. It won't really make any difference whether you have 500 karma or 1500.
+
+    h4 Radiation
+
+    p.
+      And now for some stuff on radiation, which does play a small part in the <i>Fallout</i> world. Sources of radiation include Fruit, golden geckos, and aliens and centaurs in random encounters. Whenever you get a huge dose all at once, the message window says "You have received a large dose of radiation." As explained in the patch notes, the radiation sign pops up once you've reached 66 rem.
+
+    p.
+      As far as I can tell radiation damage works like this: some time after you absorb a dose of radiation, you'll get one of the messages listed below, and you may temporarily lose stat points, Healing Rate and current Hit Points. The severity of the "attack" depends on your total rem count, but also on the amount of recent radiation that triggered the message. After 7 days, your stats will return to normal. A little confusingly, this is signalled by another message identical to the first one. If you absorb more radiation in the meanwhile, your current penalty may be replaced by a more severe one.
+
+    p.
+      Here's a list of the penalties you may suffer. The rem figures are rough approximations.
+
+    table
+      tbody
+        tr
+          td(width="50") <b>Rem</b>
+          td(width="180") <b>Message</b>
+          td(width="50") <b>HR</b>
+          td(width="50") <b>CHP</b>
+          td(width="50") <b>ST</b>
+          td(width="50") <b>PE</b>
+          td(width="50") <b>EN</b>
+          td(width="50") <b>CH</b>
+          td(width="50") <b>IN</b>
+          td(width="50") <b>AG</b>
+        tr
+          td &gt;0
+          td "very nauseous"
+          td
+          td
+          td
+          td
+          td
+          td
+          td
+          td
+        tr
+          td &gt;150
+          td "slightly fatigued"
+          td 
+          td 
+          td <nobr>-1</nobr>
+          td 
+          td 
+          td 
+          td 
+          td 
+        tr
+          <td>&gt;300</td>
+          <td>"vomiting does not stop"</td>
+          <td><nobr>-3</nobr></td>
+          <td></td>
+          <td><nobr>-1</nobr></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><nobr>-1</nobr></td>
+        tr
+          <td>&gt;450</td>
+          <td>"hair is falling out"</td>
+          <td><nobr>-5</nobr></td>
+          <td><nobr>-5</nobr></td>
+          <td><nobr>-2</nobr></td>
+          <td></td>
+          <td><nobr>-1</nobr></td>
+          <td></td>
+          <td></td>
+          <td><nobr>-2</nobr></td>
+        tr
+          <td>&gt;600</td>
+          <td>"skin is falling off"</td>
+          <td><nobr>-10</nobr></td>
+          <td><nobr>-15</nobr></td>
+          <td><nobr>-4</nobr></td>
+          <td><nobr>-3</nobr></td>
+          <td><nobr>-3</nobr></td>
+          <td><nobr>-3</nobr></td>
+          <td><nobr>-1</nobr></td>
+          <td><nobr>-5</nobr></td>
+        tr
+          <td>&gt;1000</td>
+          <td>"intense agony"</td>
+          <td><nobr>-10</nobr></td>
+          <td><nobr>-20</nobr></td>
+          <td><nobr>-6</nobr></td>
+          <td><nobr>-5</nobr></td>
+          <td><nobr>-5</nobr></td>
+          <td><nobr>-5</nobr></td>
+          <td><nobr>-3</nobr></td>
+          <td><nobr>-6</nobr></td>
+
+    p.
+      You will expire from your condition if any of these stats except for Healing Rate (including CH) drops to 0 or below. This is checked only at the moment when they are lowered, so you may be able to use drugs to stay alive. Assuming you don't die in this manner, you can live with any kind of rem count and still run around with no penalty whatsoever. In any normal game, radiation is not a significant factor; in fact, in order to reach even 300 rem you'd have to run several laps around the Gecko reactor room or purposely hang around the Toxic waste dump. From what I can tell, there is never any permanent damage resulting from radiation.<br><br>
