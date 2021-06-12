@@ -20,14 +20,6 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.pug$/i,
-        use: [
-          { 
-            loader: 'simple-pug-loader',
-          }
-        ]
-      },
-      {
         test: /\.(c|s[ac])ss$/i,
         use: [
           MiniCssExtractPlugin.loader,

@@ -33,11 +33,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.pug$/,
-        loader: 'simple-pug-loader'
-      },
-      {
-        test: /\.m?js$/,
+        test: /\.m?js$/i,
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {

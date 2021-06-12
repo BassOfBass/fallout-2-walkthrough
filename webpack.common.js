@@ -85,6 +85,17 @@ const webpackConfig = {
       ]
     })
   ],
+  module: {
+    rules: [
+      {
+        test: /\.pug$/i,
+        loader: 'simple-pug-loader',
+        options: {
+          root: path.resolve(__dirname, "src")
+        }
+      },
+    ]
+  },
   resolve: {
     extensions: [".js"],
     alias: {
