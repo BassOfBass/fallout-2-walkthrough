@@ -1,14 +1,17 @@
-mixin fancyImage(url, alt=url, srcset=url, sources=[])
-  picture.fancy-image
-    if sources.length !== 0
-      //- for source of sources
-      //-   source.fancy-image__source(
-      //-     srcset=source.srcset, 
-      //-     type=source.type
-      //-   )
+mixin fancyImage(url, alt=url, srcset=url, sources=[], inline=true)
+  span.fancy-image(
+    class= !inline && "fancy-image--block"
+  )
+    picture.fancy-image__picture
+      if sources.length
+        for source in sources
+          source.fancy-image__source(
+            srcset=source.srcset, 
+            type=source.type
+          )
 
-    img.fancy-image__image(
-      src=url, 
-      alt=alt, 
-      srcset=srcset
-    )
+      img.fancy-image__image(
+        src=url, 
+        alt=alt, 
+        srcset=srcset
+      )

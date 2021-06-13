@@ -2,11 +2,9 @@ mixin fancyQuote(authorName, url='', top=false)
   figure.fancy-quote
     if top
       figcaption.fancy-quote__author #{authorName}
-          //- | #{authorName} - #[a(href=url) #[cite #{source}]]
 
     blockquote.fancy-quote__quote(cite=url)
       block
     
     if !top
       figcaption.fancy-quote__author #{authorName}
-          //- | #{authorName} - #[a(href=url) #[cite #{source}]]

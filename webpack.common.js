@@ -62,11 +62,11 @@ const webpackConfig = {
     //   template: "./src/pages/endings.pug",
     //   chunks: ['index'],
     // }),
-    // new HTMLWebpackPlugin({
-    //   filename: 'index/index.html',
-    //   template: "./src/pages/index.pug",
-    //   chunks: ['index'],
-    // }),
+    new HTMLWebpackPlugin({
+      filename: 'introduction/index.html',
+      template: "./src/pages/introduction.pug",
+      chunks: ['index'],
+    }),
     // new HTMLWebpackPlugin({
     //   filename: 'items/index.html',
     //   template: "./src/pages/items.pug",

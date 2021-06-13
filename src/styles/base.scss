@@ -34,6 +34,7 @@ body {
 h1 {
   width: 100%;
   text-align: center;
+  font-size: 2.2rem;
 }
 
 input,
@@ -50,6 +51,19 @@ li,
 dt,
 dd {
   line-height: 1.5;
+}
+
+p {
+  padding: 0.5em 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+ul, 
+ol {
+  padding-left: 1em;
 }
 
 a {

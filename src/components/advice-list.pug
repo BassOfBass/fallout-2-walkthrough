@@ -1,9 +1,16 @@
 include fancy-image.pug
 
+-
+  const adviceRanks = {
+    reliable: require("@/assets/star3.gif"),
+    unreliable: require("@/assets/star4.gif"),
+    speculative: require("@/assets/star.gif"),
+    general: require("@/assets/star2.gif")
+  }
+
 mixin adviceList(advices)
   ul.advice-list
-    //- for item of advices
-    //-   li.advice-list__item
-    //-     +fancyImage(item.rank)
-    //-     |
-    //-     | #{item.advice}
+    for item in advices
+      li.advice-list__item
+        +fancyImage(adviceRanks[item.rank], `${item.rank} advice`)
+        span.advice-list__advice #{item.advice}
