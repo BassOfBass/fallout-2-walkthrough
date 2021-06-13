@@ -1,15 +1,14 @@
-mixin fancyQuote(source, url='', top=false)
+mixin fancyQuote(source='', url='', top=false)
   figure.fancy-quote
     if top
       figcaption.fancy-quote__author
-      block author
-        | #{authorName} - #[a(href=url) #[cite #{source}]]
+        block author
+          //- | #{authorName} - #[a(href=url) #[cite #{source}]]
 
     blockquote.fancy-quote__quote(cite=url)
       block quote
-        p #{quoteText}
     
     if !top
       figcaption.fancy-quote__author
         block author
-          | #{authorName} - #[a(href=url) #[cite #{source}]]
+          //- | #{authorName} - #[a(href=url) #[cite #{source}]]
