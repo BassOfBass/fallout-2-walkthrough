@@ -1,15 +1,23 @@
 extends /layout
 
+include /components/_index.pug
+
 block content
   h1 Car
 
   section
-    <blockquote>"I told 'em. 'We need traffic signs', I said. But did they listen? Noooo... let's not listen to ol' Lumpy!"<br>
-    --Lumpy</blockquote>
+    +fancyQuote()
+      block quote
+        p.
+          I told 'em. 'We need traffic signs', I said. But did they listen? Noooo... let's not listen to ol' Lumpy!
+      block author
+        |--Lumpy
 
-    Here I'll gather some details and information on the car, which is a major convenience factor in the game and a very nifty feature. It will let you zoom between locations and makes it a lot easier to avoid random encounters when you get them. How you get it is detailed in the Den and Gecko sections. If your IN is below 4 you have to chew Mentats at least once to enable the dialogue choices that will earn you the car. You can always kill Skeeter for the car part, but Smitty is another matter (and raising Repair to 110% that early in the game to fix the car yourself is a bit unrealistic).<br><br>
+    p.
+      Here I'll gather some details and information on the car, which is a major convenience factor in the game and a very nifty feature. It will let you zoom between locations and makes it a lot easier to avoid random encounters when you get them. How you get it is detailed in the Den and Gecko sections. If your IN is below 4 you have to chew Mentats at least once to enable the dialogue choices that will earn you the car. You can always kill Skeeter for the car part, but Smitty is another matter (and raising Repair to 110% that early in the game to fix the car yourself is a bit unrealistic).
 
-    The car runs on energy supplied by Small Energy Cells or Micro Fusion Cells. You'll see how much "gas" there is left in the car when you look at it, measured in a percentage. One full pack (40) of Small Energy Cell will refuel the car by 20 percentage units. One full pack of Micro Fusion Cell (50) will refuel the car by 50 percentage units. (You will see different numbers elsewhere, but these are correct.) Use your chosen fuel on the middle or forward section of the car to refuel it.
+    p.
+      The car runs on energy supplied by Small Energy Cells or Micro Fusion Cells. You'll see how much "gas" there is left in the car when you look at it, measured in a percentage. One full pack (40) of Small Energy Cell will refuel the car by 20 percentage units. One full pack of Micro Fusion Cell (50) will refuel the car by 50 percentage units. (You will see different numbers elsewhere, but these are correct.) Use your chosen fuel on the middle or forward section of the car to refuel it.
 
     <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
     What fuel you should use depends mostly on what weapons you're using. If you're into ranged combat, using SEC to refuel the car is most often the sensible choice, since several good weapons like the Pulse and Plasma Rifles use MFC. On the other hand, SEC is used by Power Fists, the Pulse Pistol and the Alien Blaster. I always end up with more than enough of both. In terms of bartering the two fuel types are exactly on a par.</blockquote>

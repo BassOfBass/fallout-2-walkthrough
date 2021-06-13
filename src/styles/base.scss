@@ -1,21 +1,37 @@
 html {
   box-sizing: border-box;
-  font-family: sans-serif;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
 }
 
 body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100%;
+  background-color: hsl(46, 100%, 94%);;
+  padding: 0;
   margin: 0;
-  background: #fff8e2;;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+
+  & > * {
+    flex: 0 1 auto;
+    padding: 1em 2em;
+  }
+}
+
+h1 {
+  text-align: center;
 }
 
 input,
@@ -43,7 +59,7 @@ a:active {
 table,
 th,
 td {
-  border: 1px solid #000000;
+  border: 1px solid hsl(0, 0%, 0%);
   border-collapse: collapse;
 }
 
@@ -51,25 +67,6 @@ th,
 td {
   padding-left: 2px;
   padding-right: 2px;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
 }
 
 .btn {
@@ -104,8 +101,8 @@ td {
 }
 
 .dark {
-  background: #1e201c;
-  color: #ffffff;
+  background: hsl(90, 7%, 12%);
+  color: hsl(0, 0%, 100%);
 }
 
 .no-break {
