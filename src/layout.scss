@@ -9,6 +9,10 @@
 .main-content {
   flex: 1 1 auto;
   max-width: 1280px;
+
+  & > section {
+    padding: 0.5em 0;
+  }
 }
 
 .nav-list {
@@ -20,7 +24,7 @@
   padding: 0;
   
   & > * {
-    margin: 0.75em;
+    margin: 0.5em 0.75em;
 
     &:first-child {
       margin-left: 0;

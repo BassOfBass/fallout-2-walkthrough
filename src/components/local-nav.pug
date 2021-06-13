@@ -1,0 +1,13 @@
+mixin localNav(navItems, ordered=false)
+  nav.local-nav
+    p Table of contents
+    if !ordered
+      ul
+        for item in navItems
+          li
+            a(href=item.link) #{item.title}
+    else 
+      ol
+        for item in navItems
+          li
+            a(href=item.link) #{item.title}

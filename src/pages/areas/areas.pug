@@ -2,10 +2,34 @@ extends /layout.pug
 
 block content
   h1#areas Area walkthroughs
-  nav
-    p Table of contents
-
-    ol
+  -
+    const areaNav = [
+      { link: "#intro", title: "Introduction"},
+      { link: "#temple", title: "Temple of Trials"},
+      { link: "#arroyo", title: "Arroyo"},
+      { link: "#klamath", title: "Klamath"},
+      { link: "#toxic", title: "Toxic Caves"},
+      { link: "#den", title: "The Den"},
+      { link: "#modoc", title: "Modoc"},
+      { link: "#farm", title: "Ghost Farm"},
+      { link: "#vault-city", title: "Vault City"},
+      { link: "#gecko", title: "Gecko"},
+      { link: "#raiders", title: "Raiders"},
+      { link: "#broken-hills", title: "Broken Hills"},
+      { link: "#redding", title: "Redding"},
+      { link: "#reno", title: "New Reno"},
+      { link: "#golgotha", title: "Golgotha"},
+      { link: "#stables", title: "The Stables"},
+      { link: "#sad", title: "Sierra Army Depot"},
+      { link: "#ncr", title: "New California Republic"},
+      { link: "#v15", title: "Vault 15"},
+      { link: "#v13", title: "Vault 13"},
+      { link: "#base", title: "Military Base"},
+      { link: "#san-fran", title: "San Francisco"},
+      { link: "#navarro", title: "Navarro"},
+      { link: "#enclave", title: "The Enclave"},
+    ];
+  +localNav(areaNav, true)
 
   section#intro
     include intro.pug
