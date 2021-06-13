@@ -12,7 +12,9 @@ const devServerConfig = {
   port: 3000,
   publicPath: "/",
   contentBase: path.resolve(__dirname, "public"),
-  watchContentBase: true
+  watchContentBase: true,
+  hot: false,
+  liveReload: true,
 };
 
 /**

@@ -89,7 +89,7 @@ const webpackConfig = {
     rules: [
       {
         test: /\.pug$/i,
-        loader: 'simple-pug-loader',
+        loader: 'pug-loader',
         options: {
           root: path.resolve(__dirname, "src")
         }
