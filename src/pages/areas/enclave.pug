@@ -1,11 +1,18 @@
+include /components/_index.pug
+
 h2 The Enclave
 
-<blockquote>"I always knew the President wanted to kill us all."<br>
---New Reno townsperson</blockquote>
++fancyQuote()
+  block quote
+    p.
+      I always knew the President wanted to kill us all.
+  block author
+    | --New Reno townsperson
 
 You get to the Enclave by taking the tanker from San Francisco, remember? After a freakin' beautiful cutscene you find yourself on the oil rig that is the Enclave. 15,000 xp are yours for this accomplishment. Exit the first map to the east and you find yourself in a foyer of sorts.<br><br>
 
-There's a computer terminal around which you need IN 6 to operate, or IN 4 plus Sneak above 70% (don't ask me why). First of all, see how much information you can get from it by logging on (Science 100% or LK 8) and downloading files to read in your Pipboy. With Science 125% you get a report on the reactor computer, telling of what would happen if anyone were to blow it up. Hmm. With Science 150% you can read about a madcap scheme to kill off most of the world's human and mutant population using the FEV virus. Except it's not so madcap because it seems they can pull it off. Lastly with Science 175% you can read a worthless speech draft and a worthless word list. Is that the kind of reward you get for boosting a skill to ridiculous levels?<br><br>
+p.
+  There's a computer terminal around which you need IN 6 to operate, or IN 4 plus Sneak above 70% (don't ask me why). First of all, see how much information you can get from it by logging on (Science 100% or LK 8) and downloading files to read in your Pipboy. With Science 125% you get a report on the reactor computer, telling of what would happen if anyone were to blow it up. Hmm. With Science 150% you can read about a madcap scheme to kill off most of the world's human and mutant population using the FEV virus. Except it's not so madcap because it seems they can pull it off. Lastly with Science 175% you can read a worthless speech draft and a worthless word list. Is that the kind of reward you get for boosting a skill to ridiculous levels?<br><br>
 
 Then there are two functions for which you need an item, the Presidential Access Key. Counter insurgence can only be used from this terminal and will be described later. Emergency defensive systems shutdown, which can only be used to any effect on the detention and reactor levels, will make the turrets on the current level snooze for 1-3 minutes. There isn't any major point to this since the turrets will never initiate combat anyway as a result of their level being on alert (seemingly due to some confusion in the scripting of the Enclave alarm system). It will keep the turrets from attacking you for other reasons (see below), but there is no stealth value in this since everyone else will anyway and it won't stop the turrets from firing on you once combat has started. A note of warning: if you try to activate the emergency systems shutdown without the Access Key and have Science 75% or more, the terminal you're using will be permanently deactivated, which is bad especially if it's the one in the foyer. Many of the computers and terminals in the Enclave will bring up the same menu, but they're not very important since you can't do the one truly useful thing from there.
 
@@ -22,15 +29,21 @@ The reason why you can bring one NPC is actually the same bug as in Navarro. The
 
 If you're bringing your NPCs or if you're just going to kill everyone here anyway, some things to keep in mind:
 
-<ul>
-<li>There's no such thing as a general alert status in the Enclave. For each new map you can choose whether to leave your path of violence or grab the good stuff then attack again. Citizens and scientists will never initiate combat, but may fight back if you're in combat mode already (or run away).
-</li><li>You don't have to fight Curling, Murray or the President (see below), and you can talk to them as if nothing happened even if you fought on those levels. This means you can kill off everyone for xp and equipment and still get the xp of the sneaky/diplomatic path.
-</li><li>Make use of bottlenecks. Critters that don't see a clear path to you won't move at all, buying you time. Dodge behind doorways and corners a lot. Make them come to you and pick them off as they arrive. Start a fight at the edge of the map, never at the centre.
-</li><li>Since both you and your opponents will be heavily armoured, it's all about criticals here. You should either be using sniping weapons (Gauss Rifle, aimed shot to the eyes or something) or efficient big guns (Avenger or Vindicator Minigun, Bozar). Without the Sniper perk this will be awfully hard, but if you have it, you can clean the place out using a .44 Magnum and plenty of .44 Magnum JHP. With a good HtH weapon and Slayer you should be fine too as long as you avoid open spaces.
-</li><li>Kill the soldiers with Gauss Rifles first; they're most likely to pierce your armour and score criticals. They're usually the ones wearing "old" power armour. Also look out for the ones with Vindicator Miniguns in the presidential area. Turrets usually won't hurt you - unless they score a critical hit bypassing your armour, in which case you're dead.
-</li><li>Some of the robots (not the turrets) aren't on the same team as the soldiers as far as the game engine is concerned - these are the ones on the detention level and the two closest to the entrance in the barracks. This means you can ignore them until later, or even take them out first without anyone reacting. If a robot hits an Enclave soldier the soldiers will attack the robots, but when combat ends they will turn on you; this can also lead to the Elder being executed, so watch out.
-</li><li>As in Navarro, prevent your party from spreading out or running to meet the opposition. This is not least because they'll happily attack some citizen while ignoring the turret next to them which will cut them down in two turns. Chances are they'll be in the way more than anything else, so set their combat options wisely, or just dump them and go solo. Goris will simply die if you bring him here.
-</li></ul>
+ul
+  li.
+    There's no such thing as a general alert status in the Enclave. For each new map you can choose whether to leave your path of violence or grab the good stuff then attack again. Citizens and scientists will never initiate combat, but may fight back if you're in combat mode already (or run away).
+  li.
+    You don't have to fight Curling, Murray or the President (see below), and you can talk to them as if nothing happened even if you fought on those levels. This means you can kill off everyone for xp and equipment and still get the xp of the sneaky/diplomatic path.
+  li.
+    Make use of bottlenecks. Critters that don't see a clear path to you won't move at all, buying you time. Dodge behind doorways and corners a lot. Make them come to you and pick them off as they arrive. Start a fight at the edge of the map, never at the centre.
+  li.
+    Since both you and your opponents will be heavily armoured, it's all about criticals here. You should either be using sniping weapons (Gauss Rifle, aimed shot to the eyes or something) or efficient big guns (Avenger or Vindicator Minigun, Bozar). Without the Sniper perk this will be awfully hard, but if you have it, you can clean the place out using a .44 Magnum and plenty of .44 Magnum JHP. With a good HtH weapon and Slayer you should be fine too as long as you avoid open spaces.
+  li.
+    Kill the soldiers with Gauss Rifles first; they're most likely to pierce your armour and score criticals. They're usually the ones wearing "old" power armour. Also look out for the ones with Vindicator Miniguns in the presidential area. Turrets usually won't hurt you - unless they score a critical hit bypassing your armour, in which case you're dead.
+  li.
+    Some of the robots (not the turrets) aren't on the same team as the soldiers as far as the game engine is concerned - these are the ones on the detention level and the two closest to the entrance in the barracks. This means you can ignore them until later, or even take them out first without anyone reacting. If a robot hits an Enclave soldier the soldiers will attack the robots, but when combat ends they will turn on you; this can also lead to the Elder being executed, so watch out.
+  li.
+    As in Navarro, prevent your party from spreading out or running to meet the opposition. This is not least because they'll happily attack some citizen while ignoring the turret next to them which will cut them down in two turns. Chances are they'll be in the way more than anything else, so set their combat options wisely, or just dump them and go solo. Goris will simply die if you bring him here.
 
 In the barracks area to the east there's nothing to do except search the numerous boxes and lockers and lament the fact that you'll never be able to carry everything you find away from here (unless you're using the barter trick - see the NPC section). There's an Avenger Minigun and plenty of 2mm EC ammo among other things. Also there are a couple of packets of Plastic Explosives in the northeast corner of the map, and you might want to take one for later use. The blast doors to the emergency staircase cannot be opened at this time.<br><br>
 
@@ -42,14 +55,32 @@ You can actually kill most of the prisoners through the forcefields without any 
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
 The two eyebots sport Robo Melee Weapons that you can get using the procedure described in the Toxic Caves section. These function as decent punching weapons that require no ammo and deal electrical damage, which is pretty sweet because you can run up to someone, punch them in the eye and then watch them vanish in a violet flash. Just like in real life! Rocketbots in the Enclave carry Avenger Miniguns and/or Robo Rocket Launchers. The two on the presidential level have ordinary Miniguns in addition to the Robo Rocket Launchers; in v1.0 these were not armed at all.</blockquote>
 
-Below that level is the puzzle room. If it feels like you were just warped into an <i>Eye of the Beholder</i>-type game where you have to put rocks on the right pressure plates to open the door, that's about right. The floor in the square of nine rooms will give off electric charges now and then, damaging you for 2-10 HP (if you have your Advanced Power Armor on); when it does, your character will stop and you have to click on your destination again. Now don't try to open the doors manually or Lockpick them, you'll only take a lot of electrical damage. Instead use the computers to open and close the doors. I'll follow the tradition of presenting the maze like this (you enter from room 2):<br><br>
+Below that level is the puzzle room. If it feels like you were just warped into an <i>Eye of the Beholder</i>-type game where you have to put rocks on the right pressure plates to open the door, that's about right. The floor in the square of nine rooms will give off electric charges now and then, damaging you for 2-10 HP (if you have your Advanced Power Armor on); when it does, your character will stop and you have to click on your destination again. Now don't try to open the doors manually or Lockpick them, you'll only take a lot of electrical damage. Instead use the computers to open and close the doors. I'll follow the tradition of presenting the maze like this (you enter from room 2):
+<br>
+<br>
 
-<table>
-<tbody><tr><td width="40"></td><td width="20">1</td><td width="20">2</td><td width="20">3</td></tr>
-<tr><td></td><td>4</td><td>5</td><td>6</td></tr>
-<tr><td></td><td>7</td><td>8</td><td>9</td></tr>
-<tr><td></td><td></td><td>10</td><td></td></tr>
-</tbody></table><br>
+table
+  tbody
+    tr
+      td(width="40") 
+      td(width="20") 1
+      td(width="20") 2
+      td(width="20") 3
+    tr
+      td 
+      td 4
+      td 5
+      td 6
+    tr
+      td 
+      td 7
+      td 8
+      td 9
+    tr
+      td 
+      td 
+      td 10
+      td 
 
 If you have the G.E.C.K. already and just want the quickest path, use the computers in rooms 2, 3, 1, 7, 8 and 9, and the way will be clear (2, 1, 2, 3, 8, 9 is another way). If you need to visit the side rooms (or just want to), go 2, 1, 2, 3, 3, 8, 9 to open up all exits at the same time. The game is practically over, but you may still want to pick up the Adv. Power Armor MKII, the best armour in the game, from the room to the left. The soldiers in both rooms are unarmed, for some reason. If you want to get in there quickly, go 2, 1 and 4, and you'll then have access to both side areas. When you're done there, use 6, then go back to 2 and begin anew with the "quickest path" described above.<br><br>
 
@@ -60,7 +91,8 @@ To move beyond room 10, you need to carry a G.E.C.K. Even if you didn't stop to 
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
 If you have extremely high Traps and Lockpick values (say, 100% and 200% respectively), you can disable the electric fields on the doors and then pick them for 115 xp each time. This is not really recommended, though. The Lockpick penalty will drop for each door you open, but only if you're using the skill and not a lockpick item.</blockquote>
 
-There's something more to the maze room than meets the eye. One of the terminals (selected randomly each game) actually contains an "Easter egg", which is found by using the Repair skill on it. If you pass a Science check and it's the right terminal, you'll get a reward, but only if you have tagged any of the skills listed below, and that skill is also at 100% or more. The skills are checked in the order given, and once one is found that qualifies, that's what you get whether you want it or not. You can only get one egg.
+p.
+  There's something more to the maze room than meets the eye. One of the terminals (selected randomly each game) actually contains an "Easter egg", which is found by using the Repair skill on it. If you pass a Science check and it's the right terminal, you'll get a reward, but only if you have tagged any of the skills listed below, and that skill is also at 100% or more. The skills are checked in the order given, and once one is found that qualifies, that's what you get whether you want it or not. You can only get one egg.
 
 <ul>
 <li>Science: Opens all doors in the maze (using the terminals afterwards will open and close them as usual).
@@ -117,13 +149,13 @@ In case your character is too dumb to access the terminal, or if you didn't get 
 Jacek Kominek points out that another way to take on Horrigan separately is to simply run back to where the turrets can't see you, in the corner above the blast doors. If the doors are open you can run away and end combat after defeating Horrigan, and the turrets won't attack when you return. Jacek also laments the ineffectiveness of mêlée weapons against Horrigan; the lack of good criticals means they can't measure up to the damage output of a good minigun. But then again, what can?</blockquote>
 
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-DrömmarnasStig relates a strategy: "After several aimed shots at the eyes with no effect I went for his legs. I crippled one leg and that won the fight for me. Once he runs out of ammo he changes to a mêlée weapon. From this moment forth I took one shot and used the rest of my AP for backing off, Horrigan never being able to reach me. From my brief experience I would highly recommend aimed shots at his legs (I took the Gauss Rifle for that job)." He'll be able to move just 3 hexes with a crippled leg.</blockquote>
+|DrömmarnasStig relates a strategy: "After several aimed shots at the eyes with no effect I went for his legs. I crippled one leg and that won the fight for me. Once he runs out of ammo he changes to a mêlée weapon. From this moment forth I took one shot and used the rest of my AP for backing off, Horrigan never being able to reach me. From my brief experience I would highly recommend aimed shots at his legs (I took the Gauss Rifle for that job)." He'll be able to move just 3 hexes with a crippled leg.</blockquote>
 
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-Here's a bug/cheat similar to the vent bug in Navarro. Shoot Horrigan from a distance so he comes running towards you, then step behind the second door to the right and close it (Horrigan seems to be able to fire through the first one). When Horrigan runs into the doorway he'll stop and not attack. You'll then be able to hit him or shoot at him as much as you like with no return fire. This doesn't work if he's got his knife out.</blockquote>
+|Here's a bug/cheat similar to the vent bug in Navarro. Shoot Horrigan from a distance so he comes running towards you, then step behind the second door to the right and close it (Horrigan seems to be able to fire through the first one). When Horrigan runs into the doorway he'll stop and not attack. You'll then be able to hit him or shoot at him as much as you like with no return fire. This doesn't work if he's got his knife out.</blockquote>
 
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-Now's the time to whip out that Mutated Toe from earlier. Use it on Horrigan and... he loses 3 of his max HP. Hold me up, someone. This is exactly what happens if you use it on anyone else. And if you go to New Reno afterwards, the citizens <i>still</i> say "you really should have used the mutated toe on Horrigan".</blockquote>
+|Now's the time to whip out that Mutated Toe from earlier. Use it on Horrigan and... he loses 3 of his max HP. Hold me up, someone. This is exactly what happens if you use it on anyone else. And if you go to New Reno afterwards, the citizens <i>still</i> say "you really should have used the mutated toe on Horrigan".</blockquote>
 
 Once Horrigan is "killed" (10,000 combat xp) you can talk to his head and torso for some final words. He says he activated the self-destruct mechanism and that you're going to die horribly (although this doesn't seem to do anything that the reactor meltdown wouldn't anyway), then his head pops. Shooting the still living head from a distance instead may confuse the message window (especially for aimed shots) but the result is the same. Or you could just open the door to the dock and the moment you step through you'll see the end animation. After that you'll be treated to various endings for the places you have visited during the game; see the following section for details. This also crosses out Arroyo quest 5, whether you have a G.E.C.K. or not.
 
@@ -138,19 +170,32 @@ My maximum Rock count, without resorting to recurring random encounters (where t
 
 To recap the stuff you can do after you beat the game: designer notes and xp computer in Vault City, Hintbook from Father Tully, dating Miss Kitty, movie at the Golden Globes, grav plates in the chop shop (maybe), and great new dialogue in New Reno and Vault City. Stupid characters cannot do the things in the VC vault, but they can hug Lynette instead. What to do after you get tired of roaming the wasteland for random encounters, or giving yourself unlimited xp using the Hintbook? Well, for a new experience you might want to try a different kind of game (I don't guarantee that all of these will be fun):
 
-<ul>
-<li>Play a reckless HtH character if you didn't already, or a cold-blooded sniper if you didn't already.
-</li><li>Play a game restricting yourself to using weapons you normally wouldn't (e.g. Sharpened Pole, Pipe Rifle, 9mm Mauser, Molotov Cocktail, Gold Nugget, Wrench, XL70E3, Flamer, Rocket Launcher).
-</li><li>Play a character with Intelligence less than 4.
-</li><li>Play a CH 1 loner with no NPCs if you didn't already, or a squad leader if you didn't already.
-</li><li>Play a game where you go everywhere, do as much stuff as you can, finish as many quests as possible, loot everything that can be looted and kill everyone who should be killed, if you didn't already.
-</li><li>Play a purely evil character, scorning every good quest or action, seeking to do active harm but without resorting to mindless butchery; or conversely, play a ridiculously innocent and noble character to whom stealth and deceit are unthinkable.
-</li><li>Play a "pacifist" game, never attacking or killing sentient beings, avoiding any situation where there is no diplomatic or sneaky solution and running from battles whenever possible.
-</li><li>Play a "role-playing" game, where you do and say only the things you figure a person realistically would have (tricky!).
-</li><li>Play a character with some comic quirk, e.g. keeping every dog NPC in the game around, or with some tragic flaw, e.g. suffering from periodic memory loss.
-</li><li>Play as a Jet junkie from the moment you first encounter the drug (or, less extremely, from the moment you can maintain a steady supply).
-</li><li>Play a game with game difficulty set to hard and combat difficulty set to rough if you didn't already.
-</li><li>Try to finish the game as quickly as you can, using any stupid shortcut technique that helps. (See the Addenda section for what is quite likely the quickest way.)
-</li><li>Play an "iron man" game or impose other restrictions upon saving and loading, or hit yourself on the head with a hammer every time you die and have to reload.
-</li><li>Some combination of the above.
-</li></ul>
+ul
+  li.
+    Play a reckless HtH character if you didn't already, or a cold-blooded sniper if you didn't already.
+  li.
+    Play a game restricting yourself to using weapons you normally wouldn't (e.g. Sharpened Pole, Pipe Rifle, 9mm Mauser, Molotov Cocktail, Gold Nugget, Wrench, XL70E3, Flamer, Rocket Launcher).
+  li.
+    Play a character with Intelligence less than 4.
+  li.
+    Play a CH 1 loner with no NPCs if you didn't already, or a squad leader if you didn't already.
+  li.
+    Play a game where you go everywhere, do as much stuff as you can, finish as many quests as possible, loot everything that can be looted and kill everyone who should be killed, if you didn't already.
+  li.
+    Play a purely evil character, scorning every good quest or action, seeking to do active harm but without resorting to mindless butchery; or conversely, play a ridiculously innocent and noble character to whom stealth and deceit are unthinkable.
+  li.
+    Play a "pacifist" game, never attacking or killing sentient beings, avoiding any situation where there is no diplomatic or sneaky solution and running from battles whenever possible.
+  li.
+    Play a "role-playing" game, where you do and say only the things you figure a person realistically would have (tricky!).
+  li.
+    Play a character with some comic quirk, e.g. keeping every dog NPC in the game around, or with some tragic flaw, e.g. suffering from periodic memory loss.
+  li.
+    Play as a Jet junkie from the moment you first encounter the drug (or, less extremely, from the moment you can maintain a steady supply).
+  li.
+    Play a game with game difficulty set to hard and combat difficulty set to rough if you didn't already.
+  li.
+    Try to finish the game as quickly as you can, using any stupid shortcut technique that helps. (See the Addenda section for what is quite likely the quickest way.)
+  li.
+    Play an "iron man" game or impose other restrictions upon saving and loading, or hit yourself on the head with a hammer every time you die and have to reload.
+  li.
+    Some combination of the above.

@@ -1,9 +1,15 @@
+include /components/fancy-quote.pug
+
 h2 Vault 15
 
-<blockquote>"Uh... I have information that... could lead to establishing a network of... um, all the existing vaults throughout the country. That's it."<br>
---The Chosen One</blockquote>
++fancyQuote()
+  block quote
+    p Uh... I have information that... could lead to establishing a network of... um, all the existing vaults throughout the country. That's it.
+  block author
+    |--The Chosen One
 
-Hmm, the layout of this place has changed a bit since the original game. I guess Zeke's house is supposed to be the shack with the manhole in it, but where did that cliff face come from?<br><br>
+p.
+  Hmm, the layout of this place has changed a bit since the original game. I guess Zeke's house is supposed to be the shack with the manhole in it, but where did that cliff face come from?<br><br>
 
 When you first get here, people won't be very talkative. Zeke won't talk to you, Dalia guarding the path to the northeast won't let you pass, so your only choice is talking to Rebecca, the woman standing south of the tent in the middle. Follow her into the tent and choose your dialogue options wisely for some information and eventually quest 3.<br><br>
 
@@ -33,7 +39,7 @@ The computer in Darion's room will give you a Spy Holodisk if you pass a Science
 In the unpatched game you could steal the holodisk back from Gunther and give it to him for another reward, over and over again.</blockquote>
 
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-IN&lt;4: You can get the Spy Holodisk from the computer and even tell Tandi about it, but you can't report to Gunther and get the reward because of the IN requirement. This could be an oversight, or maybe your character has the memory of a goldfish.</blockquote>
+|IN&lt;4: You can get the Spy Holodisk from the computer and even tell Tandi about it, but you can't report to Gunther and get the reward because of the IN requirement. This could be an oversight, or maybe your character has the memory of a goldfish.</blockquote>
 
 <b></b></li><li><b>Kill Darion.</b><br><br>
 
@@ -44,7 +50,8 @@ If for some reason you don't get the quest from Zeke, it pops up crossed out onc
 
 <b></b></li><li><b>Rescue Chrissy.</b><br><br>
 
-Someone's overheard your conversation with Rebecca. Go over to Dalia and she'll let you pass. Leave the map to the northeast. You can now go about this in one of three ways:<br><br>
+p.
+  Someone's overheard your conversation with Rebecca. Go over to Dalia and she'll let you pass. Leave the map to the northeast. You can now go about this in one of three ways:
 
 <ul type="disc">
 <li>Sneaky way: go along the top of the screen (Sneak isn't necessary, but it helps), disarm the trap on the door on the north side of the building (you need to use Traps twice, once to find the trap and again to disarm it), pick the lock, do the same thing with the door to the northeast, and there's Chrissy. Tell her to come along. If Phil sees you leaving he'll attack at once.

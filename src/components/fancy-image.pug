@@ -1,0 +1,13 @@
+mixin fancyImage(url, alt=url, srcset=url, sources=[])
+  picture.fancy-image
+    //- for source of sources
+    //-   source.fancy-image__source(
+    //-     srcset=source.srcset, 
+    //-     type=source.type
+    //-   )
+
+    img.fancy-image__image(
+      src=url, 
+      alt=alt, 
+      srcset=srcset
+    )

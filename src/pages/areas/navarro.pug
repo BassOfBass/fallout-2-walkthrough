@@ -1,7 +1,14 @@
+include /components/_index.pug
+
 h2 Navarro
 
-<blockquote>"Now I suppose you're going to tell me you're just out looking for a water chip. Do I look dumb?"<br>
---Enclave patrolman</blockquote>
++fancyQuote()
+  block quote
+    p.
+      Now I suppose you're going to tell me you're just out looking for a water chip. Do I look dumb?
+  block author
+    |--Enclave patrolman
+
 
 When you come here you're greeted by a robed guy named Chris who tries to shoo you away. If you accepted the quest from Matthew in San Francisco you can ask him about the Enclave and say you want to join. You get 1500 xp if you pull this off and get the password (you only get one chance). If you bring NPCs he'll complain about your "posse" and you'll have to pass a second Speech check. You can get him to mention both San Francisco and the Military Base, but he won't put any of them on your world map. There are also several dialogue options that lead to him attacking right away, or sounding the alarm then attacking, or leaving you alone. When you're done with him, ask him about vertibirds and mention the Brotherhood; you then get some 20 seconds to kill him before he sounds the alarm (500 xp), which shouldn't be a problem.
 
@@ -19,7 +26,8 @@ In the woods there are mines which are impossible to spot even with PE 10 and in
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
 You can have one NPC along with you and the guards still say you're alone; people you meet will act as if the NPC isn't there. This happens because most Navarro scripts assume that the car is included in the "NPC count", which it apparently isn't. Unlike Chris, though, they won't think you're not alone if you actually are. There is one crucial exception: the guard outside the commander's office will raise the alarm if anyone is with you except K-9 (you can use Sneak to avoid this), because <i>his</i> script was updated in the patch. Also note that if for some reason you didn't get the car from the Den, this bug will not happen.</blockquote>
 
-Lastly, if you brought the Blue Pass Key from the Gecko power plant, you can enter by the air vent in the southwest corner of the gas station map and unlock the outer cell door. You'll get the 1500 xp for releasing the deathclaw (see quest 1), and Xarn will walk down the hall (even if you block the doorway) and disappear. If you talk to him he'll act as if he's still imprisoned, so this is probably not supposed to happen. Other than pre-empting the deathclaw quest this doesn't change anything. You can't open the next door from this direction.<br><br>
+p.
+  Lastly, if you brought the Blue Pass Key from the Gecko power plant, you can enter by the air vent in the southwest corner of the gas station map and unlock the outer cell door. You'll get the 1500 xp for releasing the deathclaw (see quest 1), and Xarn will walk down the hall (even if you block the doorway) and disappear. If you talk to him he'll act as if he's still imprisoned, so this is probably not supposed to happen. Other than pre-empting the deathclaw quest this doesn't change anything. You can't open the next door from this direction.
 
 In the underground section, loot the room to the northwest for a suit of Advanced Power Armor, a Blue Memory Module, a Plasma Rifle and stuff. You can talk to the quartermaster in any armour (even the Vault 13 suit) and he just tells you to go get suited up. In the computer room you can hack the computer with good Science, but if you fail the alarm goes off. Or you could ask one of the scientists and if you pass a Speech check he'll tell you the password, "Snookie", after which you can go mock the female guard outside (you can also enter this password after hearing about the nickname from Cookie). Asking the computer about the main base earns you quest 3.
 
@@ -37,20 +45,25 @@ A sign on the turrets says that tampering with them will lead to death, and in f
 Taking the lift down from the comm central gets you to a room where nothing much is going on. Save before going to talk to the sergeant south of there. He's a blast! However, you should reload afterwards, because otherwise you'll have the sergeant patrolling the grounds endlessly and attacking if he finds you anywhere except beside the vertibird too many times. He'll also attack if you talk to him repeatedly without some kind of Power Armor on.
 
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-Don't approach the southern gate from the inside if you didn't give the password to the guards coming from the outside, or they'll attack.</blockquote>
+|Don't approach the southern gate from the inside if you didn't give the password to the guards coming from the outside, or they'll attack.</blockquote>
 
 If you talk to Cookie the cook in the canteen you can get quest 3 and some info on what's going on, but it's nothing crucial. In the vertibird hangar you find Raul. If you told Quincy that Raul sent you for the plans, you can tell Raul that Quincy wants to see him, and he walks off to beat Quincy up. If you got the quest to fix K-9 you can tell him Dr Schreber sent you to get permission to take the K-9 Motivator from the locker directly behind him. If all else fails, Sneak.<br><br>
 
 If you do want to kill everyone, here are a few facts and pointers:
 
-<ul>
-<li>As long as there are any turrets left on the ground level map, you won't be able to leave combat mode there. Annoying.
-</li><li>Get the turrets first, and from a distance. They're not so tough to kill, but they do a lot of damage if you allow them to fire.
-</li><li>Don't let your party spread out. The "stay where you are" combat option comes in handy. From the underground area you can take an elevator to the surface, kill off everyone in the surrounding area, go back down to heal your wounds if you need to, then proceed to the next lift, and so on. This is a whole lot easier than a frontal assault.
-</li><li>You don't have to kill Cookie.
-</li><li>If you shun ranged weapons this will be difficult, but by no means impossible. It's vital to keep your party together, so you may want to leave any reckless ones behind (Goris is impossible here). Sometimes you can sneak right up on the turrets, sometimes not; remember that smashing their sensors turns them into so much scrap metal. Try to lead people around corners and save a lot. This must be why you've been accumulating those insane amounts of Stimpaks and Super Stimpaks.
-</li><li>Apart from Chris, you don't miss out on any quest xp by attacking from the start.
-</li></ul>
+ul
+  li.
+    As long as there are any turrets left on the ground level map, you won't be able to leave combat mode there. Annoying.
+  li.
+    Get the turrets first, and from a distance. They're not so tough to kill, but they do a lot of damage if you allow them to fire.
+  li.
+    Don't let your party spread out. The "stay where you are" combat option comes in handy. From the underground area you can take an elevator to the surface, kill off everyone in the surrounding area, go back down to heal your wounds if you need to, then proceed to the next lift, and so on. This is a whole lot easier than a frontal assault.
+  li.
+    You don't have to kill Cookie.
+  li.
+    If you shun ranged weapons this will be difficult, but by no means impossible. It's vital to keep your party together, so you may want to leave any reckless ones behind (Goris is impossible here). Sometimes you can sneak right up on the turrets, sometimes not; remember that smashing their sensors turns them into so much scrap metal. Try to lead people around corners and save a lot. This must be why you've been accumulating those insane amounts of Stimpaks and Super Stimpaks.
+  li.
+    Apart from Chris, you don't miss out on any quest xp by attacking from the start.
 
 <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
 HtH characters can make the underground battle a whole lot easier by taking advantage of a scenery glitch. Once the battle starts, run to one of the vents facing south and stand in front of it (the edge of the hex should touch the wall). It doesn't work for all vents, but the one in the L-shaped corridor going to an elevator should do it, as well as the one in Xarn's room. You'll find the guards can't attack you with ranged weapons and instead just run up to you and stare stupidly. You can't attack them with ranged weapons, either (or even a Super Sledge), but you <i>can</i> hit them with unarmed attacks or mêlée weapons with range 1. The Hubologist base also has these vents, but this trick doesn't seem to work there.</blockquote>
