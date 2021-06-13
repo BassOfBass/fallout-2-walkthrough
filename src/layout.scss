@@ -8,4 +8,34 @@
 
 .main-content {
   flex: 1 1 auto;
+  max-width: 1280px;
+}
+
+.nav-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  
+  & > * {
+    margin: 0.75em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    font-size: 1.25em;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 }

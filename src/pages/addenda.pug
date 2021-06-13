@@ -1,30 +1,36 @@
 extends /layout.pug
 
 block content
+
   h1 Addenda
 
+  +fancyQuote("--The Chosen One")
+    p Must break free. Strength fading. Must leave.
+
   section
+    p.
+      Miscellaneous stuff.
 
-    +fancyQuote()
-      block quote
-        p Must break free. Strength fading. Must leave.
-      block author
-        | --The Chosen One
+    h2 Talking heads
 
-    Miscellaneous stuff.
+    p Let's see...
+    -
+      const heads = "the Elder, Hakunin, Sulik, Lynette, Harold, Marcus, Myron, Tandi, dying Hakunin, Navarro soldier/sergeant, President Richardson, Frank Horrigan";
+    ul
+      for head in heads.split(", ")
+        li #{head}
+    
 
-    <h4>Talking heads</h4>
+    h2 Bugs
 
     p.
-      Let's see... the Elder, Hakunin, Sulik, Lynette, Harold, Marcus, Myron, Tandi, dying Hakunin, Navarro soldier/sergeant, President Richardson, Frank Horrigan.
+      Here I'm going to list a few bugs uncovered during play or testing. Well-known, localized bugs that affect gameplay are generally covered in the area walkthrough. Apart from these there are countless minor text mistakes, typos, dialogue glitches, continuity errors, AI glitches, scenery transparency issues and other inconsequential bugs. While for a game of this size and complexity that's sort of understandable, lots of remaining scripting bugs would be extremely easy to correct, and many fixes in the patch either didn't work or introduced new problems that are just as bad. More pre-patch bugs that are not listed here or in the walkthrough can be found in the patch notes.
 
-    <h4>Bugs</h4>
+    p.
+      Game shutting down completely and returning to Windows as I stepped on the exit grid of the Gecko power plant. Random instances of spawning Windows error messages and then shutting down during combat.
 
-    Here I'm going to list a few bugs uncovered during play or testing. Well-known, localized bugs that affect gameplay are generally covered in the area walkthrough. Apart from these there are countless minor text mistakes, typos, dialogue glitches, continuity errors, AI glitches, scenery transparency issues and other inconsequential bugs. While for a game of this size and complexity that's sort of understandable, lots of remaining scripting bugs would be extremely easy to correct, and many fixes in the patch either didn't work or introduced new problems that are just as bad. More pre-patch bugs that are not listed here or in the walkthrough can be found in the patch notes.<br><br>
-
-    Game shutting down completely and returning to Windows as I stepped on the exit grid of the Gecko power plant. Random instances of spawning Windows error messages and then shutting down during combat.<br><br>
-
-    Buttons on the game display replaced by black squares and becoming unusable: the skilldex button on the main screen, and the sleep button in the Pipboy. This is actually a warning sign that the "too many items" bug is coming up (see below).<br><br>
+    p.
+      Buttons on the game display replaced by black squares and becoming unusable: the skilldex button on the main screen, and the sleep button in the Pipboy. This is actually a warning sign that the "too many items" bug is coming up (see below).
 
     Car disappearing from the game after I went to Modoc and clicked Bed &amp; Breakfast on the town map. Car disappearing without warning as I was travelling on world map. "Car outta fuel" location appearing randomly on the world map, or not at all, after I ran out of fuel. And I had thought all the car bugs were out of the patched version...<br><br>
 
@@ -288,87 +294,87 @@ block content
     p.
       By now certain questions have qualified for "frequently asked" status, some to a higher degree than others. The ones I particularly reserve the right to ignore in the future are technical questions, gameplay questions with no relation to guide content, and questions whose answers are fully included in the guide. Don't get me wrong - I appreciate feedback, but there's only one of me and many of you, and writing the guide should count as a significant contribution on my part in the first place.
 
-    //- -
-    //-   const faq = [
-    //-     {
-    //-       question: "Q: Where can I find the children patch or utility X?",
-    //-       answer: 'A: Try the No Mutants Allowed site or any other fan site with a downloads section. Do a search. Follow some links. Look around. (Note that in earlier versions of the guide I carelessly referred to the children patch as the "kid patch", which seems to have been the main reason why lots of people believed it was nowhere to be found.)'
-    //-     },
-    //-     {
-    //-       question: "Q: Can you just mail or transfer them to me instead?",
-    //-       answer: "A: No."
-    //-     },
-    //-     {
-    //-       question: "Q: Is it OK to mail you with a bunch of screenshots, a save game folder or some other big attachment without prior notice?",
-    //-       answer: "A: No. Even if I hadn't been on a modem and even if it hadn't been basic netiquette to ask first, the chance that I actually have any use for such a file is rather slim. If you have some find or game experience to relate, use words to begin with and we'll take it from there."
-    //-     },
-    //-     {
-    //-       question: "Q: I can't find the Bag in Modoc. Can you give me more detailed instructions how to find it?",
-    //-       answer: "A: Not really. If for some reason you simply can't locate the Bag, running a map editor and turning off the scenery should let you mark its location."
-    //-     },
-    //-     {
-    //-       question: "Q: I can't trigger event X or I'm having problem Y. What am I doing wrong?",
-    //-       answer: "A: Depending on what X or Y is there could be any number of reasons, really. If I gather from your description of the problem that some guide content is off or incomplete, I'll see if I can adjust it. If not, I'm afraid I don't have the time to elaborate aimlessly on things that are already in the guide or guess at the particulars of someone else's game. Try posing your question on a dedicated message board; the answer is often more simple than it seems."
-    //-     },
-    //-     {
-    //-       question: "Q: I can't use item X on critter/scenery Y, it defaults to some other action.",
-    //-       answer: "A: You can't always use an item from the active item slot. If you read the manual (page 35ff) you'll find that you can click and hold on a critter or piece of scenery, then choose the backpack icon, and finally select the item you want to use from inventory."
-    //-     },
-    //-     {
-    //-       question: "Q: My NPCs disappeared but it's like they're around invisibly, what's up with that?",
-    //-       answer: "A: Did you get cosy with Mrs Bishop? Check out the New Reno section."
-    //-     },
-    //-     {
-    //-       question: "Q: I'm playing the game using mod X, and...",
-    //-       answer: "A: Stop right there. This guide covers official content only. Before you report a problem or a discovery encountered in a modded game, contact the creator of the mod and/or verify that it also happens in an unmodded game. If you report that some bug or feature works differently from what's stated in the guide and it turns out that this is only because of modified content, all the time I spend trying to verify your claim will be entirely wasted."
-    //-     },
-    //-     {
-    //-       question: "Q: Is there any way of avoiding or shutting off the 13-year time limit?",
-    //-       answer: "A: There's a number of hacks that effectively halt or reset the game timer. However, they don't actually extend it, so at the time of writing there is no solution that doesn't come with side effects such as disrupting shop and quest timers. This may still be a decent alternative to losing a game that happened to drag on for a while."
-    //-     },
-    //-     {
-    //-       question: "Q: Have you written or are you planning guides for <i>Fallout</i> and/or <i>Fallout Tactics: Brotherhood of Steel</i>?",
-    //-       answer: "A: There is already a <i>Fallout</i> guide, as well as a <i>Wasteland</i> guide for those who care about that. I haven't played <i>Fallout Tactics</i> and frankly don't think I will. Needless to say, I won't be touching the ineptly named console title <i>Fallout: Brotherhood of Steel</i> with a 6-foot Sharpened Pole."
-    //-     },
-    //-     {
-    //-       question: "Q: Can I host your guide on my <i>Fallout</i> site/general game help site?",
-    //-       answer: "A: Please do, providing that your site is a non-charging, non-profit, non-exclusive enterprise. By that I mean you can't ask users for any sort of fee or service, have them jump through hoops like a registration process, or limit access to the site using some other criteria; moreover, any donations or advertising revenues must be spent entirely on maintaining the site and not on any private benefits. Yes, even if that's just your cola and cat food expenses, as long as this is more than the people who provided your site's content are getting."
-    //-     },
-    //-     {
-    //-       question: "Q: Can I translate the guide into strange language X?",
-    //-       answer: "A: Basically, yes; see below for more details."
-    //-     },
-    //-     {
-    //-       question: "Q: It says that someone is working on a translation to strange language X, but I haven't seen any result of that. Should I go on and make my own?",
-    //-       answer: "A: It will ultimately have to be your decision, based on what information I have and what you can learn from your own national fan communities, if anything. Until now I haven't really kept track of those who have volunteered to translate, which is somewhat unfortunate, as it has evidently happened that people have quietly abandoned such attempts. In more recent times, others have probably opted to wait for the next guide update after I led them to believe it wouldn't be that long. From this point on I will file away contact information for prospective translators, date-stamp their projects and flag them as pending, ongoing or finished, assuming this information is available to me. If you are actively planning a translation, if you are working on one, if you already finished one, or even if you started on one and then gave up on it, please get in touch."
-    //-     },
-    //-     {
-    //-       question: "Q: Why don't you update your guide with the fixes from Killap's unofficial patch?",
-    //-       answer: `A: However highly I think of Killap's work, I won't cover it for the same reason I don't cover any other mods or tweaks. It makes more sense to restrict the guide to official, universal and unchanging content and rely on separate documentation for any add-ons, provided by those who have intimate knowledge of and control over those changes, or by anyone else who would take the time to investigate them. Even if I were to include such information, it would mostly amount to a great number of not really useful notes saying, "Oh, and if you're using Killap's patch, this bug doesn't happen.`
-    //-     },
-    //-     {
-    //-       question: "Q: I sent you a mail, but you didn't reply.",
-    //-       answer: `A: That happens (and not just to people who write to me about <i>Fallout</i>, believe me). The best way to get a quick response is basically to condense your query/report into a number of simple questions or bullet point notes that I can fire off equally simple replies to. Anything that requires looking into game files ("I did X to Y after doing quest Z and now things have gone all wonky"), or formulating an opinion ("Isn't my 3-page character description the niftiest"), or leaving the <i>Fallout</i> context behind ("My sister is a princess but she's locked up in an African tower or something") could very well end up sitting in my inbox until I feel it would be too awkward to actually do something about it. However, everything that's submitted gets read and duly considered or investigated as appropriate once I get around to updating. You can always send me a reminder if you want confirmation that I received your mail, or if there's something in particular you really want a reply to. That is, unless the reason I didn't reply was one of those listed at the top of this FAQ, in which case you shouldn't send me a reminder because geckos will carry off your fridge.`
-    //-     },
-    //-     {
-    //-       question: "Q: Now that you don't have to direct people in search of the children patch any longer, what's the most common answer to received queries?",
-    //-       answer: `A: "It's in the guide" - applying to both questions asked and features reported. Use the search function, folks!`
-    //-     },
-    //-     {
-    //-       question: "Q: This thing must have taken forever to write. Are you insane?",
-    //-       answer: `A: "Devoted" sounds so much better, don't you think? The guide certainly grew into something bigger than I could predict back in October 2001. Testing and playing has eaten up much more time than the actual writing, but along the way I've learned to use various editors and tools to simplify things to the point where in-game testing has almost become a formality. Plus I get lots of appreciative mail. ;)`
-    //-     },
-    //-     {
-    //-       question: "Q: The Awareness perk isn't <i>that</i> good.",
-    //-       answer: "A: Go away."
-    //-     },
+    -
+      const faqList = [
+        {
+          question: "Where can I find the children patch or utility X?",
+          answer: 'Try the No Mutants Allowed site or any other fan site with a downloads section. Do a search. Follow some links. Look around. (Note that in earlier versions of the guide I carelessly referred to the children patch as the "kid patch", which seems to have been the main reason why lots of people believed it was nowhere to be found.)'
+        },
+        {
+          question: "Can you just mail or transfer them to me instead?",
+          answer: "No."
+        },
+        {
+          question: "Is it OK to mail you with a bunch of screenshots, a save game folder or some other big attachment without prior notice?",
+          answer: "No. Even if I hadn't been on a modem and even if it hadn't been basic netiquette to ask first, the chance that I actually have any use for such a file is rather slim. If you have some find or game experience to relate, use words to begin with and we'll take it from there."
+        },
+        {
+          question: "I can't find the Bag in Modoc. Can you give me more detailed instructions how to find it?",
+          answer: "Not really. If for some reason you simply can't locate the Bag, running a map editor and turning off the scenery should let you mark its location."
+        },
+        {
+          question: "I can't trigger event X or I'm having problem Y. What am I doing wrong?",
+          answer: "Depending on what X or Y is there could be any number of reasons, really. If I gather from your description of the problem that some guide content is off or incomplete, I'll see if I can adjust it. If not, I'm afraid I don't have the time to elaborate aimlessly on things that are already in the guide or guess at the particulars of someone else's game. Try posing your question on a dedicated message board; the answer is often more simple than it seems."
+        },
+        {
+          question: "I can't use item X on critter/scenery Y, it defaults to some other action.",
+          answer: "You can't always use an item from the active item slot. If you read the manual (page 35ff) you'll find that you can click and hold on a critter or piece of scenery, then choose the backpack icon, and finally select the item you want to use from inventory."
+        },
+        {
+          question: "My NPCs disappeared but it's like they're around invisibly, what's up with that?",
+          answer: "Did you get cosy with Mrs Bishop? Check out the New Reno section."
+        },
+        {
+          question: "I'm playing the game using mod X, and...",
+          answer: "Stop right there. This guide covers official content only. Before you report a problem or a discovery encountered in a modded game, contact the creator of the mod and/or verify that it also happens in an unmodded game. If you report that some bug or feature works differently from what's stated in the guide and it turns out that this is only because of modified content, all the time I spend trying to verify your claim will be entirely wasted."
+        },
+        {
+          question: "Is there any way of avoiding or shutting off the 13-year time limit?",
+          answer: "There's a number of hacks that effectively halt or reset the game timer. However, they don't actually extend it, so at the time of writing there is no solution that doesn't come with side effects such as disrupting shop and quest timers. This may still be a decent alternative to losing a game that happened to drag on for a while."
+        },
+        {
+          question: "Have you written or are you planning guides for <i>Fallout</i> and/or <i>Fallout Tactics: Brotherhood of Steel</i>?",
+          answer: "There is already a <i>Fallout</i> guide, as well as a <i>Wasteland</i> guide for those who care about that. I haven't played <i>Fallout Tactics</i> and frankly don't think I will. Needless to say, I won't be touching the ineptly named console title <i>Fallout: Brotherhood of Steel</i> with a 6-foot Sharpened Pole."
+        },
+        {
+          question: "Can I host your guide on my <i>Fallout</i> site/general game help site?",
+          answer: "Please do, providing that your site is a non-charging, non-profit, non-exclusive enterprise. By that I mean you can't ask users for any sort of fee or service, have them jump through hoops like a registration process, or limit access to the site using some other criteria; moreover, any donations or advertising revenues must be spent entirely on maintaining the site and not on any private benefits. Yes, even if that's just your cola and cat food expenses, as long as this is more than the people who provided your site's content are getting."
+        },
+        {
+          question: "Can I translate the guide into strange language X?",
+          answer: "Basically, yes; see below for more details."
+        },
+        {
+          question: "It says that someone is working on a translation to strange language X, but I haven't seen any result of that. Should I go on and make my own?",
+          answer: "It will ultimately have to be your decision, based on what information I have and what you can learn from your own national fan communities, if anything. Until now I haven't really kept track of those who have volunteered to translate, which is somewhat unfortunate, as it has evidently happened that people have quietly abandoned such attempts. In more recent times, others have probably opted to wait for the next guide update after I led them to believe it wouldn't be that long. From this point on I will file away contact information for prospective translators, date-stamp their projects and flag them as pending, ongoing or finished, assuming this information is available to me. If you are actively planning a translation, if you are working on one, if you already finished one, or even if you started on one and then gave up on it, please get in touch."
+        },
+        {
+          question: "Why don't you update your guide with the fixes from Killap's unofficial patch?",
+          answer: `However highly I think of Killap's work, I won't cover it for the same reason I don't cover any other mods or tweaks. It makes more sense to restrict the guide to official, universal and unchanging content and rely on separate documentation for any add-ons, provided by those who have intimate knowledge of and control over those changes, or by anyone else who would take the time to investigate them. Even if I were to include such information, it would mostly amount to a great number of not really useful notes saying, "Oh, and if you're using Killap's patch, this bug doesn't happen.`
+        },
+        {
+          question: "I sent you a mail, but you didn't reply.",
+          answer: `That happens (and not just to people who write to me about <i>Fallout</i>, believe me). The best way to get a quick response is basically to condense your query/report into a number of simple questions or bullet point notes that I can fire off equally simple replies to. Anything that requires looking into game files ("I did X to Y after doing quest Z and now things have gone all wonky"), or formulating an opinion ("Isn't my 3-page character description the niftiest"), or leaving the <i>Fallout</i> context behind ("My sister is a princess but she's locked up in an African tower or something") could very well end up sitting in my inbox until I feel it would be too awkward to actually do something about it. However, everything that's submitted gets read and duly considered or investigated as appropriate once I get around to updating. You can always send me a reminder if you want confirmation that I received your mail, or if there's something in particular you really want a reply to. That is, unless the reason I didn't reply was one of those listed at the top of this FAQ, in which case you shouldn't send me a reminder because geckos will carry off your fridge.`
+        },
+        {
+          question: "Now that you don't have to direct people in search of the children patch any longer, what's the most common answer to received queries?",
+          answer: `"It's in the guide" - applying to both questions asked and features reported. Use the search function, folks!`
+        },
+        {
+          question: "This thing must have taken forever to write. Are you insane?",
+          answer: `"Devoted" sounds so much better, don't you think? The guide certainly grew into something bigger than I could predict back in October 2001. Testing and playing has eaten up much more time than the actual writing, but along the way I've learned to use various editors and tools to simplify things to the point where in-game testing has almost become a formality. Plus I get lots of appreciative mail. ;)`
+        },
+        {
+          question: "The Awareness perk isn't <i>that</i> good.",
+          answer: "Go away."
+        },
 
-    //-   ];
-    //- dl
-    //-   for item of faq
-    //-     div
-    //-       dt #{item.question}
-    //-       dd #{item.answer}
+      ];
+    dl.faq-list
+      for item in faqList
+        div.faq-list__item
+          dt.faq-list__question !{item.question}
+          dd.faq-list__answer !{item.answer}
 
     <h4>Note on guide translation</h4>
 

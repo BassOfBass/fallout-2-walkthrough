@@ -30,12 +30,23 @@ html(lang="en")
 
   body
     header.global-header
-      a.btn.btn-to-top(href="#contents") to index
+      nav.global-nav
+        -
+          const navList = [
+            { link: "/", title: "Home" }
+          ];
+        ul.nav-list
+          for item in navList
+            li.nav-list__item
+              a.nav-list__link(href=item.link) #{item.title}
 
-      button#themeButton.btn use dark theme #[a(href="original_source.html") view original]
+      button#themeButton.btn use dark theme
 
-      
   main#main-content.main-content
     block content
 
   footer.global-footer
+    nav
+      ul
+        li
+          a(href="original_source.html") Original guide

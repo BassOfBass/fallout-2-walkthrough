@@ -43,18 +43,29 @@ textarea {
   line-height: inherit;
 }
 
+p,
+li,
+dt,
+dd {
+  line-height: 1.5;
+}
+
 a {
   color: #0080ff;
+
+  &:visited {
+    color: #b774cc;
+  }
+  
+  &:hover {
+    color: #0015ff;
+  }
+  
+  &:active {
+    color: #0015ff;
+  }
 }
-a:visited {
-  color: #b774cc;
-}
-a:hover {
-  color: #0015ff;
-}
-a:active {
-  color: #0015ff;
-}
+
 
 table,
 th,
@@ -77,27 +88,11 @@ td {
   border-radius: 4px;
   line-height: 1.3333333;
   cursor: pointer;
-}
 
-.btn:hover {
-  color: #ffffff;
-  background-color: #777777;
-}
-
-.to-top-container {
-  position: relative;
-}
-
-.btn-to-top {
-  position: fixed;
-  right: 100px;
-  bottom: 5px;
-  z-index: 0;
-  padding: 0.25em;
-}
-
-.index {
-  line-height: 1.6em;
+  &:hover {
+    color: #ffffff;
+    background-color: #777777;
+  }
 }
 
 .dark {
