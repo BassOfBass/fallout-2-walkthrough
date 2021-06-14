@@ -1,0 +1,61 @@
+extends /layout.pug
+
+block content
+  h1 Character design
+  
+  -
+    const charNav = [
+      { link:"#char-stats", title: "Stats" },
+      { link:"#char-traits", title: "Traits" },
+      { link:"#char-skills", title: "Skills" },
+      { link:"#char-perks", title: "Perks" },
+      { link:"#char-builds", title: "Suggested characters" },
+      { link:"#char-special-perks", title: "Special perks" },
+      { link:"#char-reputations", title: "Reputations" },
+      { link:"#char-radiation", title: "Radiation" },
+    ];
+  +localNav(charNav)
+
+  section
+    +fancyQuote("--Mason")
+      p.
+        You'd think there's only ten kinds of people in the world. Way I figure it, there was some big cloning accident in the past.
+
+    p.
+      The SPECIAL system used for <i>Fallout 2</i> character design is so flexible that a complete run-down on possible types isn't feasible nor desirable. I'll center this discussion on a character type which has worked very well for me and try to argue briefly why it does. If the four extremes of character creation are the ones known as diplomat, thief, sniper and brawler, mine is a kind of small guns generalist who can in time excel at everything. It is somewhat similar to the one popularly known as "diplosniper", although some details such as my liking of Fast Shot may run counter to that definition. In any case you'll gain a lot more xp than in <i>Fallout</i>, which is why there's really no need to choose a specific path.
+
+    +adviceList()
+      +adviceItem("reliable")
+        | The pre-defined characters are generally considered to suck dead gophers (e.g. Narg has Throwing, Mingan has Skilled and Chitsa has Barter). One of the nicest things about most computer RPGs is creating your own character or characters, anyway; even if I wanted a "Mingan" character, I'd make one instead of taking Mingan.
+
+    p.
+      Gender plays a negligible role in the game. Bartering is only affected if you also have the Sex Appeal trait. The only noteworthy differences are that male characters can donate genetic material in Vault City and date Phyllis, while female characters can sleep with Metzger, Little Jesus and T-Ray for money or favours and can get hired by Miss Kitty to go to the Stables. There are several more people that will only sleep with characters of a specific gender (e.g. Angela Bishop, Slim Picket, Fannie Mae), but not much comes of it. Stupid characters can only box if they're male.
+
+    +adviceList()
+      +adviceItem("reliable")
+        | Age is not checked in any of the scripts. A nice detail is that your character will age as time goes by in the game (well, maybe the opposite would have been strange, but it's nice anyway, isn't it?).
+        
+  section#char-stats
+    include stats.pug
+      
+  section#char-traits
+    include traits.pug         
+
+  section#char-skills   
+    include skills.pug
+
+  section#char-perks
+    include perks.pug
+
+  section#char-builds
+    include builds.pug
+
+  section#char-special-perks
+    include special-perks.pug
+
+  section#char-reputations
+    include reputations.pug
+
+  section#char-radiation
+    include radiation.pug
+

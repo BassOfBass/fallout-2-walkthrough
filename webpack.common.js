@@ -39,7 +39,7 @@ const webpackConfig = {
     }),
     new HTMLWebpackPlugin({
       filename: 'character-design/index.html',
-      template: "./src/pages/character-design.pug",
+      template: "./src/pages/character-design/_index.pug",
       chunks: ['index'],
     }),
     // new HTMLWebpackPlugin({

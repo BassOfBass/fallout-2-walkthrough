@@ -1,0 +1,93 @@
+h2 Radiation
+
+p.
+  And now for some stuff on radiation, which does play a small part in the <i>Fallout</i> world. Sources of radiation include Fruit, golden geckos, and aliens and centaurs in random encounters. Whenever you get a huge dose all at once, the message window says "You have received a large dose of radiation." As explained in the patch notes, the radiation sign pops up once you've reached 66 rem.
+
+p.
+  As far as I can tell radiation damage works like this: some time after you absorb a dose of radiation, you'll get one of the messages listed below, and you may temporarily lose stat points, Healing Rate and current Hit Points. The severity of the "attack" depends on your total rem count, but also on the amount of recent radiation that triggered the message. After 7 days, your stats will return to normal. A little confusingly, this is signalled by another message identical to the first one. If you absorb more radiation in the meanwhile, your current penalty may be replaced by a more severe one.
+
+p.
+  Here's a list of the penalties you may suffer. The rem figures are rough approximations.
+
+table
+  tbody
+    tr
+      td(width="50") <b>Rem</b>
+      td(width="180") <b>Message</b>
+      td(width="50") <b>HR</b>
+      td(width="50") <b>CHP</b>
+      td(width="50") <b>ST</b>
+      td(width="50") <b>PE</b>
+      td(width="50") <b>EN</b>
+      td(width="50") <b>CH</b>
+      td(width="50") <b>IN</b>
+      td(width="50") <b>AG</b>
+    tr
+      td &gt;0
+      td "very nauseous"
+      td
+      td
+      td
+      td
+      td
+      td
+      td
+      td
+    tr
+      td &gt;150
+      td "slightly fatigued"
+      td 
+      td 
+      td <nobr>-1</nobr>
+      td 
+      td 
+      td 
+      td 
+      td 
+    tr
+      <td>&gt;300</td>
+      <td>"vomiting does not stop"</td>
+      <td><nobr>-3</nobr></td>
+      <td></td>
+      <td><nobr>-1</nobr></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><nobr>-1</nobr></td>
+    tr
+      <td>&gt;450</td>
+      <td>"hair is falling out"</td>
+      <td><nobr>-5</nobr></td>
+      <td><nobr>-5</nobr></td>
+      <td><nobr>-2</nobr></td>
+      <td></td>
+      <td><nobr>-1</nobr></td>
+      <td></td>
+      <td></td>
+      <td><nobr>-2</nobr></td>
+    tr
+      <td>&gt;600</td>
+      <td>"skin is falling off"</td>
+      <td><nobr>-10</nobr></td>
+      <td><nobr>-15</nobr></td>
+      <td><nobr>-4</nobr></td>
+      <td><nobr>-3</nobr></td>
+      <td><nobr>-3</nobr></td>
+      <td><nobr>-3</nobr></td>
+      <td><nobr>-1</nobr></td>
+      <td><nobr>-5</nobr></td>
+    tr
+      <td>&gt;1000</td>
+      <td>"intense agony"</td>
+      <td><nobr>-10</nobr></td>
+      <td><nobr>-20</nobr></td>
+      <td><nobr>-6</nobr></td>
+      <td><nobr>-5</nobr></td>
+      <td><nobr>-5</nobr></td>
+      <td><nobr>-5</nobr></td>
+      <td><nobr>-3</nobr></td>
+      <td><nobr>-6</nobr></td>
+
+p.
+  You will expire from your condition if any of these stats except for Healing Rate (including CH) drops to 0 or below. This is checked only at the moment when they are lowered, so you may be able to use drugs to stay alive. Assuming you don't die in this manner, you can live with any kind of rem count and still run around with no penalty whatsoever. In any normal game, radiation is not a significant factor; in fact, in order to reach even 300 rem you'd have to run several laps around the Gecko reactor room or purposely hang around the Toxic waste dump. From what I can tell, there is never any permanent damage resulting from radiation.
