@@ -42,11 +42,11 @@ const webpackConfig = {
       template: "./src/pages/character-design/_index.pug",
       chunks: ['index'],
     }),
-    // new HTMLWebpackPlugin({
-    //   filename: 'combat/index.html',
-    //   template: "./src/pages/combat.pug",
-    //   chunks: ['index'],
-    // }),
+    new HTMLWebpackPlugin({
+      filename: 'combat/index.html',
+      template: "./src/pages/combat.pug",
+      chunks: ['index'],
+    }),
     // new HTMLWebpackPlugin({
     //   filename: 'companions/index.html',
     //   template: "./src/pages/companions.pug",
