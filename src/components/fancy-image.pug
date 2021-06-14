@@ -7,11 +7,12 @@ mixin fancyImage(url, alt=url, srcset=url, sources=[], inline=true)
         for source in sources
           source.fancy-image__source(
             srcset=source.srcset, 
-            type=source.type
+            type=source.type,
           )
 
       img.fancy-image__image(
         src=url, 
-        alt=alt, 
-        srcset=srcset
+        alt=alt,
+        title=alt,
+        srcset=srcset,
       )

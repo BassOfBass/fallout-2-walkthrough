@@ -10,7 +10,17 @@ include fancy-image.pug
 
 mixin adviceList(advices)
   ul.advice-list
-    for item in advices
-      li.advice-list__item
-        +fancyImage(adviceRanks[item.rank], `${item.rank} advice`)
-        span.advice-list__advice #{item.advice}
+    if !block
+      for item in advices
+        li.advice-list__item
+          +fancyImage(adviceRanks[item.rank], `${item.rank} advice`)
+          span.advice-list__advice #{item.advice}
+    else
+      block
+    
+
+mixin adviceItem(rank)
+  li.advice-list__item
+    +fancyImage(adviceRanks[rank], `${rank} advice`)
+    p.advice-list__advice
+      block

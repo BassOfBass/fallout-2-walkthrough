@@ -32,11 +32,11 @@ const webpackConfig = {
       template: "./src/pages/addenda.pug",
       chunks: ['index'],
     }),
-    // new HTMLWebpackPlugin({
-    //   filename: 'car/index.html',
-    //   template: "./src/pages/car.pug",
-    //   chunks: ['index'],
-    // }),
+    new HTMLWebpackPlugin({
+      filename: 'car/index.html',
+      template: "./src/pages/car.pug",
+      chunks: ['index'],
+    }),
     // new HTMLWebpackPlugin({
     //   filename: 'character-design/index.html',
     //   template: "./src/pages/character-design.pug",
@@ -102,10 +102,10 @@ const webpackConfig = {
   resolve: {
     extensions: [".js"],
     alias: {
+      ["@/pages"]: path.resolve(__dirname, "src/pages"),
       ["@/assets"]: path.resolve(__dirname, "src/assets"),
       ["@/components"]: path.resolve(__dirname, "src/components"),
       ["@/lib"]: path.resolve(__dirname, "src/lib"),
-      ["@/pages"]: path.resolve(__dirname, "src/pages"),
       ["@/styles"]: path.resolve(__dirname, "src/styles"),
     },
   },

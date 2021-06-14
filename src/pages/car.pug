@@ -1,17 +1,12 @@
 extends /layout
 
-include /components/_index.pug
-
 block content
   h1 Car
 
   section
-    +fancyQuote()
-      block quote
+    +fancyQuote("--Lumpy")
         p.
           I told 'em. 'We need traffic signs', I said. But did they listen? Noooo... let's not listen to ol' Lumpy!
-      block author
-        |--Lumpy
 
     p.
       Here I'll gather some details and information on the car, which is a major convenience factor in the game and a very nifty feature. It will let you zoom between locations and makes it a lot easier to avoid random encounters when you get them. How you get it is detailed in the Den and Gecko sections. If your IN is below 4 you have to chew Mentats at least once to enable the dialogue choices that will earn you the car. You can always kill Skeeter for the car part, but Smitty is another matter (and raising Repair to 110% that early in the game to fix the car yourself is a bit unrealistic).
@@ -19,32 +14,35 @@ block content
     p.
       The car runs on energy supplied by Small Energy Cells or Micro Fusion Cells. You'll see how much "gas" there is left in the car when you look at it, measured in a percentage. One full pack (40) of Small Energy Cell will refuel the car by 20 percentage units. One full pack of Micro Fusion Cell (50) will refuel the car by 50 percentage units. (You will see different numbers elsewhere, but these are correct.) Use your chosen fuel on the middle or forward section of the car to refuel it.
 
-    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-    What fuel you should use depends mostly on what weapons you're using. If you're into ranged combat, using SEC to refuel the car is most often the sensible choice, since several good weapons like the Pulse and Plasma Rifles use MFC. On the other hand, SEC is used by Power Fists, the Pulse Pistol and the Alien Blaster. I always end up with more than enough of both. In terms of bartering the two fuel types are exactly on a par.</blockquote>
+    -
+      const carAdvices = [
+        {rank: "reliable", advice: "What fuel you should use depends mostly on what weapons you're using. If you're into ranged combat, using SEC to refuel the car is most often the sensible choice, since several good weapons like the Pulse and Plasma Rifles use MFC. On the other hand, SEC is used by Power Fists, the Pulse Pistol and the Alien Blaster. I always end up with more than enough of both. In terms of bartering the two fuel types are exactly on a par." },
+        {rank: "reliable", advice: "Using SEC or MFC on a party member will refuel the car. Interesting, eh? It even works if the car is not on the same map! This is probably because the car is technically an NPC." },
+        {rank: "speculative", advice: "Refuelling the car can be tricky because of a bug. If, after you choose the backpack icon and select the SEC or MFC to use on the car, your mouse pointer happens to be over a critter or an object, your character might try to interact with that critter or object instead. If this happens, scroll the screen a little in whichever direction and try again. (This bug is not actually car-specific.) Also if you stand next to the trunk when refuelling, this may cause you to access the trunk instead." },
+        {rank: "reliable", advice: "The Pathfinder perk will reduce your fuel consumption by the same proportion that it diminishes travel time, i.e. 20% (see Character Design for a note on Pathfinder). It would still be a stupid way to spend a perk." },
+      ];
 
-    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-    Using SEC or MFC on a party member will refuel the car. Interesting, eh? It even works if the car is not on the same map! This is probably because the car is technically an NPC.</blockquote>
+    +adviceList(carAdvices)
 
-    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star.gif" alt="a red star" align="left">
-    Refuelling the car can be tricky because of a bug. If, after you choose the backpack icon and select the SEC or MFC to use on the car, your mouse pointer happens to be over a critter or an object, your character might try to interact with that critter or object instead. If this happens, scroll the screen a little in whichever direction and try again. (This bug is not actually car-specific.) Also if you stand next to the trunk when refuelling, this may cause you to access the trunk instead.</blockquote>
+    p.
+      If you run out of fuel, the car will appear as a green circle on the world map marked "Car Outta Fuel". You can go there at any time to refuel and be off again. If you happen to be within a town circle at the moment this happens, the car will be on the town map instead.
 
-    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-    The Pathfinder perk will reduce your fuel consumption by the same proportion that it diminishes travel time, i.e. 20% (see Character Design for a note on Pathfinder). It would still be a stupid way to spend a perk.</blockquote>
+    +adviceList()
+      +adviceItem("reliable")
+        | The moment when you run out of fuel is critical, because a car bug may strike and teleport the car circle across the map or make it vanish altogether. It should be a rare event in a normal game, but if you spend several years cruising the wasteland you might see it happen. To avoid this you may want to refuel regularly, and save, of course.
+      +adviceItem("reliable")
+        | It can reportedly also happen that the car circle ends up within a town circle, and you won't be able to get to the car because you'll end up entering the town instead (where the car won't be). In this case the car is irretrievably lost and you should revert to a saved game immediately. Note that as long as some small part of the car circle is outside the town map square, you should be able to get to the car as long as you click outside of that square.
 
-    If you run out of fuel, the car will appear as a green circle on the world map marked "Car Outta Fuel". You can go there at any time to refuel and be off again. If you happen to be within a town circle at the moment this happens, the car will be on the town map instead.
+    p.
+      There are four different upgrades available in the game for the car, one of them only after you complete the game. One is available in the Den (regulator), one in NCR (blower) and two in the same place in New Reno (engine/trunk and grav-plates); see these areas for details.
 
-    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-    The moment when you run out of fuel is critical, because a car bug may strike and teleport the car circle across the map or make it vanish altogether. It should be a rare event in a normal game, but if you spend several years cruising the wasteland you might see it happen. To avoid this you may want to refuel regularly, and save, of course.</blockquote>
+    p.
+      The car's trunk is invaluable to store items you pick up, excess ammo and weaponry (also if you're the kind of player who wants to keep used quest items at hand just in case... but keep in mind the "too many items" bug!). Early in the game it can seem limitless, but you'll find out it's not. The trunk's capacity for holding things (250 to begin with, 275 after the upgrade) is based on item size, a factor which is not displayed in the game but is 7-15 for armour, 1-6 for weapons and 0-1 for most other items and drugs (a Rope and a Lighter are both size 1). Some weightless items like Jet have size 1, so you may want to keep these in your inventory. Another important fact is that ammo (including rockets and fuel tanks) does not take up space in the trunk, so you should happily store any ammo you're not using for the moment in the trunk. 9mm ball and BB's are exceptions, but you never find too much of those. Thrown weapons like grenades are not ammo and do take up trunk space.
 
-    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-    It can reportedly also happen that the car circle ends up within a town circle, and you won't be able to get to the car because you'll end up entering the town instead (where the car won't be). In this case the car is irretrievably lost and you should revert to a saved game immediately. Note that as long as some small part of the car circle is outside the town map square, you should be able to get to the car as long as you click outside of that square.</blockquote>
+    +adviceList()
+      +adviceItem("reliable")
+        | Since later in the game you should always have more spare weaponry than the shopkeepers can trade you cash or ammo for, there's virtually never any need to trade away ammo. Even if you don't really plan to use a Rocket Launcher at all, there's no reason to sell rockets you've found before you've sold everything else you're not going to keep, such as, I don't know, excess Combat Shotguns. So generally you should constantly be trading bulky weapons for all sorts of ammo you think might become even remotely useful.
 
-    There are four different upgrades available in the game for the car, one of them only after you complete the game. One is available in the Den (regulator), one in NCR (blower) and two in the same place in New Reno (engine/trunk and grav-plates); see these areas for details.<br><br>
+      +adviceItem("speculative")
+        | Before the patch, the car was one of the most bugged features in the game. It can still happen after the patch that the car simply disappears (but remember there's a couple of places where your car may move but not be lost, see Raiders and New Reno). Some have said that if this happens you can usually find the car somewhere it shouldn't be (Broken Hills, New Reno, NCR, or wherever), but if you have the option you should reload or revert to an earlier save, since you won't necessarily see the car again at all.
 
-    The car's trunk is invaluable to store items you pick up, excess ammo and weaponry (also if you're the kind of player who wants to keep used quest items at hand just in case... but keep in mind the "too many items" bug!). Early in the game it can seem limitless, but you'll find out it's not. The trunk's capacity for holding things (250 to begin with, 275 after the upgrade) is based on item size, a factor which is not displayed in the game but is 7-15 for armour, 1-6 for weapons and 0-1 for most other items and drugs (a Rope and a Lighter are both size 1). Some weightless items like Jet have size 1, so you may want to keep these in your inventory. Another important fact is that ammo (including rockets and fuel tanks) does not take up space in the trunk, so you should happily store any ammo you're not using for the moment in the trunk. 9mm ball and BB's are exceptions, but you never find too much of those. Thrown weapons like grenades are not ammo and do take up trunk space.
-
-    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star3.gif" alt="a green star" align="left">
-    Since later in the game you should always have more spare weaponry than the shopkeepers can trade you cash or ammo for, there's virtually never any need to trade away ammo. Even if you don't really plan to use a Rocket Launcher at all, there's no reason to sell rockets you've found before you've sold everything else you're not going to keep, such as, I don't know, excess Combat Shotguns. So generally you should constantly be trading bulky weapons for all sorts of ammo you think might become even remotely useful.</blockquote>
-
-    <blockquote><img height="12" src="./Fallout 2 Walkthrough_files/star.gif" alt="a red star" align="left">
-    Before the patch, the car was one of the most bugged features in the game. It can still happen after the patch that the car simply disappears (but remember there's a couple of places where your car may move but not be lost, see Raiders and New Reno). Some have said that if this happens you can usually find the car somewhere it shouldn't be (Broken Hills, New Reno, NCR, or wherever), but if you have the option you should reload or revert to an earlier save, since you won't necessarily see the car again at all.</blockquote>
