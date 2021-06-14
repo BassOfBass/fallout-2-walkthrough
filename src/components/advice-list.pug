@@ -12,7 +12,9 @@ mixin adviceList(advices)
   ul.advice-list
     if !block
       for item in advices
-        li.advice-list__item
+        li.advice-list__item(
+          class= `advice-list__item--${item.rank}`
+        )
           +fancyImage(adviceRanks[item.rank], `${item.rank} advice`)
           span.advice-list__advice #{item.advice}
     else
@@ -20,7 +22,9 @@ mixin adviceList(advices)
     
 
 mixin adviceItem(rank)
-  li.advice-list__item
+  li.advice-list__item(
+    class= `advice-list__item--${rank}`
+  )
     +fancyImage(adviceRanks[rank], `${rank} advice`)
-    p.advice-list__advice
+    span.advice-list__advice
       block

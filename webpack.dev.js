@@ -82,6 +82,7 @@ const config = {
     path: path.resolve(__dirname, "dev"),
     filename: "scripts/[name].bundle.js",
     assetModuleFilename: "assets/[name][ext][query]",
+    publicPath: "/"
   }
 }
 

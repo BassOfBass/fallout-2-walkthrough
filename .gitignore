@@ -3,6 +3,7 @@ node_modules
 
 # VSCode workspace file
 *.code-workspace
+.vscode
 
 # Environment variables
 .env

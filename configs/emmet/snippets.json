@@ -1,0 +1,8 @@
+{
+  "html": {
+    "snippets": {
+      "deflist": "dl>div>dt+dd",
+      "deflist:item": "(div>dt+dd)"
+    }
+  }
+}

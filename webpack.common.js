@@ -37,11 +37,11 @@ const webpackConfig = {
       template: "./src/pages/car.pug",
       chunks: ['index'],
     }),
-    // new HTMLWebpackPlugin({
-    //   filename: 'character-design/index.html',
-    //   template: "./src/pages/character-design.pug",
-    //   chunks: ['index'],
-    // }),
+    new HTMLWebpackPlugin({
+      filename: 'character-design/index.html',
+      template: "./src/pages/character-design.pug",
+      chunks: ['index'],
+    }),
     // new HTMLWebpackPlugin({
     //   filename: 'combat/index.html',
     //   template: "./src/pages/combat.pug",
