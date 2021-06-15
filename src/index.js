@@ -1,7 +1,6 @@
 import "./index.scss";
 
 const body = document.body;
-const localStorage = window.localStorage;
 /**
  * @type HTMLButtonElement
  */
@@ -44,4 +43,3 @@ function toggleTheme() {
   }
 
 }
-
